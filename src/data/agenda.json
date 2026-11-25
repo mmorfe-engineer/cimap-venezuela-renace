@@ -6,9 +6,9 @@
     "pillar": "Crecimiento",
     "instrument": "Ley orgánica y reglamentación",
     "status": "Publicación en Gaceta",
-    "detail": "La reforma publicada el 29 de enero de 2026 modifica el marco de participación privada. El programa vincula su aplicación con los contratos petroleros y la inversión en exploración y producción.",
-    "dependency": "Reglamentación, condiciones contractuales y capacidad de transporte y mejoramiento del crudo.",
-    "source": "República Bolivariana de Venezuela (2026, pp. 14–15, 24, 26). Gaceta Oficial n.º 6.978 extraordinario (29 de enero de 2026)."
+    "detail": "La reforma publicada el 29 de enero de 2026 (Gaceta Oficial N° 6.978 extraordinario) modifica el marco de participación privada. Su reglamentación complementaria fue dictada mediante Decreto N° 5.381 (Reglamento de la Ley Orgánica de Hidrocarburos), publicado en Gaceta Oficial N° 7.052 extraordinario (07/07/2026), complementada por las normas fiscales petroleras de determinación, declaración y pago dictadas en Gaceta Oficial N° 43.410 (07/07/2026). La existencia del reglamento no resuelve de forma automática la ejecución contractual ni la movilización efectiva de inversiones.",
+    "dependency": "Condiciones contractuales, capacidad de transporte, refinación y mejoramiento del crudo. La reglamentación formal es condición necesaria pero no suficiente para la ejecución operativa.",
+    "source": "República Bolivariana de Venezuela (2026, pp. 14–15, 24, 26). Gaceta Oficial N° 6.978 ext. (29/01/2026); Decreto 5.381, Gaceta Oficial N° 7.052 ext. (07/07/2026); Gaceta Oficial N° 43.410 (07/07/2026)."
   },
   {
     "id": "1.3",
@@ -17,8 +17,8 @@
     "pillar": "Crecimiento",
     "instrument": "Ley orgánica y reglamentación",
     "status": "Publicación en Gaceta",
-    "detail": "La ley publicada el 16 de abril de 2026 establece el marco de la actividad minera. El calendario del programa incorpora la reglamentación como parte de la movilización de inversión.",
-    "dependency": "Títulos mineros, reglas de operación, control ambiental e infraestructura de procesamiento.",
+    "detail": "La ley publicada el 16 de abril de 2026 (Gaceta Oficial N° 7.020 extraordinario) establece el marco de la actividad minera. Al corte del 25/11/2026, el reglamento general de la ley no ha sido localizado en Gaceta Oficial consultada, lo que no certifica incumplimiento administrativo pero mantiene pendientes sus especificaciones operativas.",
+    "dependency": "Reglamentación general (no localizada en Gaceta Oficial al corte), títulos mineros, fiscalización ambiental e infraestructura.",
     "source": "República Bolivariana de Venezuela (2026, pp. 24–26, 53–54). Gaceta Oficial n.º 7.020 extraordinario (16 de abril de 2026)."
   },
   {
@@ -28,9 +28,9 @@
     "pillar": "Crecimiento",
     "instrument": "Reforma legal",
     "status": "Sanción parlamentaria documentada",
-    "detail": "El anexo del programa registra la primera discusión del 2 de junio de 2026. El 13 de noviembre el Centro Internacional de Inversión Productiva informó que la Asamblea Nacional ya había sancionado la reforma y que el texto se remitiría al Ejecutivo.",
-    "dependency": "Promulgación, publicación del texto definitivo y reglamentación. La constancia consultada acredita la sanción parlamentaria.",
-    "source": "República Bolivariana de Venezuela (2026, pp. 25–26, 56). Kossik (2026, 13 de noviembre)."
+    "detail": "El anexo del programa registra la primera discusión del 02/06/2026. La sanción parlamentaria tuvo lugar el 10/11/2026 y la promulgación fue anunciada el 19/11/2026 por el Ejecutivo Nacional (reseñada por EFE el 20/11/2026). No obstante, el número de Gaceta Oficial y el texto legal definitivo no fueron localizados en las fuentes primarias verificadas al corte del 25/11/2026, por lo que su publicación formal, entrada en vigencia y plazos reglamentarios permanecen formalmente indeterminados. No se clasifica como vigente ni como pendiente de promulgación.",
+    "dependency": "Publicación formal en Gaceta Oficial, texto legal definitivo, reglamentación técnica e inversiones de rehabilitación de red.",
+    "source": "República Bolivariana de Venezuela (2026, pp. 25–26, 56); Asamblea Nacional (sanción 10/11/2026); EFE (20/11/2026); Kossik (2026, 13 de noviembre)."
   },
   {
     "id": "1.4",
@@ -72,9 +72,9 @@
     "pillar": "Crecimiento",
     "instrument": "Iniciativa legislativa",
     "status": "Hito del programa",
-    "detail": "La propuesta reúne tributación simplificada y acceso a servicios y beneficios sociales para facilitar el registro de empresas y trabajadores.",
-    "dependency": "Coordinación tributaria, laboral y de protección social para hacer efectivos los beneficios.",
-    "source": "República Bolivariana de Venezuela (2026, pp. 25–26)."
+    "detail": "Propuesta del plan que reúne tributación simplificada y acceso a beneficios sociales para facilitar el registro de empresas y trabajadores. Como evidencia y antecedente complementario de simplificación opera la Ley Orgánica para la Celeridad y Optimización de Trámites Administrativos, publicada en Gaceta Oficial N° 7.018 extraordinario (08/04/2026, arts. 5–12: ventanilla única e interoperabilidad), sin confundirse con esta iniciativa legislativa de formalización integral aún pendiente.",
+    "dependency": "Coordinación tributaria, laboral y de protección social para hacer efectivos los incentivos.",
+    "source": "República Bolivariana de Venezuela (2026, pp. 25–26); antecedente conexo: Gaceta Oficial N° 7.018 extraordinario (08/04/2026)."
   },
   {
     "id": "1.9–10",
@@ -105,9 +105,9 @@
     "pillar": "Finanzas públicas",
     "instrument": "Providencia administrativa",
     "status": "Antecedente administrativo documentado",
-    "detail": "El programa identifica la Providencia SNAT/2024/000121 y sitúa en marzo de 2025 la entrada en vigor del régimen que describe. Distingue la certificación de sistemas de la futura conciliación con pagos.",
-    "dependency": "Sistemas de facturación certificados. La integración de datos bancarios requeriría un protocolo específico.",
-    "source": "República Bolivariana de Venezuela (2026, pp. 27–29)."
+    "detail": "El programa cita la Providencia SNAT/2024/000121, la cual fue derogada expresamente por la Providencia SNAT/2026/00084 (Gaceta Oficial N° 43.435 del 12/08/2026, facsímil no disponible públicamente). El marco normativo posterior aplicable es la Providencia SNAT/2026/00093 (Gaceta Oficial N° 43.484 del 21/10/2026), cuya disposición final octava otorga un régimen de adecuación de 180 días continuos (con exigibilidad a partir del 19/04/2027), manteniéndose aplicable el régimen anterior durante la transición sin vigencia inmediata ni acceso bancario generalizado.",
+    "dependency": "Plazo de adecuación técnica de 180 días continuos (hasta 19/04/2027), homologación de sistemas de facturación y protocolos de conciliación bancaria.",
+    "source": "República Bolivariana de Venezuela (2026, pp. 27–29); Gaceta Oficial N° 43.435 (12/08/2026); Gaceta Oficial N° 43.484 (21/10/2026)."
   },
   {
     "id": "2.5",
@@ -160,9 +160,9 @@
     "pillar": "Finanzas públicas",
     "instrument": "Operación de reestructuración",
     "status": "Hito del programa",
-    "detail": "El canje figura como hito de la agenda. Los términos dependen de la negociación, del perímetro de obligaciones y del alivio compatible con los pagos futuros.",
-    "dependency": "Conciliación por deudor e instrumento, análisis de sostenibilidad y diálogo con los acreedores.",
-    "source": "República Bolivariana de Venezuela (2026, pp. 29–30, 83–84)."
+    "detail": "El canje figura como hito de la agenda del programa. Como hito parlamentario complementario conexo se documenta el proyecto de Ley Especial de Endeudamiento Complementario para el Ejercicio Económico Financiero 2026 (primera discusión aprobada el 17/11/2026), que constituye un trámite de endeudamiento y no una ley definitiva de reestructuración o canje. Asimismo, la Licencia General 58 de la OFAC (05/05/2026) autoriza únicamente servicios de asesoría financiera preliminar, no transacciones operativas ni canjes directos de bonos.",
+    "dependency": "Conciliación de acreencias por deudor e instrumento, análisis de sostenibilidad macrofiscal y diálogo multilateral. El marco regulatorio y de sanciones condiciona la ejecución de ofertas vinculantes.",
+    "source": "República Bolivariana de Venezuela (2026, pp. 29–30, 83–84); Asamblea Nacional (primera discusión endeudamiento complementario, 17/11/2026); OFAC (General License 58, 05/05/2026)."
   },
   {
     "id": "2.11",

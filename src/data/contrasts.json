@@ -1,0 +1,54 @@
+{
+  "macro": [
+    {
+      "indicator": "PIB real 2025 (tasa de variación anual, estimación oficial)",
+      "official": "9,0 % (estimación oficial)",
+      "external": "1,6 % (Banco Mundial)",
+      "difference": "7,4 puntos porcentuales",
+      "methodology": "La divergencia entre la estimación oficial (9,0 %) y la del Banco Mundial (1,6 %) permanece sin reconciliación formal entre las fuentes; posibles factores explicativos no verificados incluyen diferencias en el año base del deflactor, ponderaciones sectoriales y revisiones estadísticas.",
+      "source": "República Bolivariana de Venezuela (2026, p. 11); Banco Mundial (2026, informe complementario, corte 25/11/2026)."
+    },
+    {
+      "indicator": "PIB nominal 2025 (dólares corrientes, estimación oficial)",
+      "official": "USD 98.100 millones (98,1 MMM, estimación oficial)",
+      "external": "USD 99.660 millones (99,66 MMM, Banco Mundial)",
+      "difference": "USD -1.560 millones (-1,56 %)",
+      "methodology": "Diferencia de conversión atribuible al tipo de cambio de cierre y promedio implícito en la deflactación de cuentas nacionales.",
+      "source": "República Bolivariana de Venezuela (2026, tabla 27, p. 92); Banco Mundial (2026, informe complementario, corte 25/11/2026)."
+    },
+    {
+      "indicator": "Crecimiento proyectado 2026 (tasa anual, proyección oficial)",
+      "official": "5,0 % (proyección oficial)",
+      "external": "5,0 % (FMI WEO, oct 2026) / 6,5 % (IIES-UCAB, oct 2026)",
+      "difference": "0,0 pp frente al FMI (coincidencia numérica puntual) / UCAB: 1,5 puntos porcentuales por encima de la proyección oficial",
+      "methodology": "Coincidencia estrictamente numérica con la tasa de crecimiento proyectada en el WEO del FMI (octubre 2026), sin equivalencia metodológica demostrada entre sus modelos.",
+      "source": "República Bolivariana de Venezuela (2026, p. 11); FMI World Economic Outlook (octubre 2026); IIES-UCAB (octubre 2026)."
+    }
+  ],
+  "oil": [
+    {
+      "indicator": "Producción crudo octubre 2026 (reporte OPEP)",
+      "primaryValue": "1.224.000 b/d (declaración oficial directa)",
+      "contrastValue": "1.158.000 b/d (fuentes secundarias OPEP)",
+      "difference": "Diferencia de 66.000 b/d",
+      "interpretation": "Divergencia habitual entre el reporte administrativo ministerial y la estimación por rastreo satelital de tanqueros y flujo de terminales marítimas.",
+      "source": "OPEP (Boletín Mensual del Mercado Petrolero, MOMR noviembre 2026); Petroguía (12 de noviembre de 2026)."
+    },
+    {
+      "indicator": "Suministro vs. Capacidad AIE (octubre 2026)",
+      "primaryValue": "1.140.000 b/d (suministro efectivo AIE)",
+      "contrastValue": "1.120.000 b/d (capacidad sostenible de producción)",
+      "difference": "+20.000 b/d sobre capacidad sostenible",
+      "interpretation": "El reporte de la AIE registra un suministro que supera en 20.000 b/d la capacidad sostenible estimada; la causa técnica de este diferencial no se encuentra acreditada documentalmente en los informes verificados.",
+      "source": "Agencia Internacional de la Energía (AIE, Oil Market Report noviembre 2026, corte 25/11/2026)."
+    },
+    {
+      "indicator": "Inversión petrolera acumulada 2026–2036 (Capex, proyecciones oficiales)",
+      "primaryValue": "USD 160.000 millones (USD 159,8 MMM)",
+      "contrastValue": "Requerimiento de inversión del plan oficial",
+      "difference": "No constituye inversión ejecutada ni comprometida contractualmente",
+      "interpretation": "El monto desglosa USD 75.000 millones asignados a PDVSA (46,875 %) y USD 85.000 millones a socios privados. Su materialización está sujeta a financiamiento y condiciones operativas.",
+      "source": "República Bolivariana de Venezuela (2026, pp. 89–91, 97); Morfe (2026), Memoria Técnica MISRE, pp. 12–13."
+    }
+  ]
+}

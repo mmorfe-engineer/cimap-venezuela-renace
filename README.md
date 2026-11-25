@@ -11,8 +11,8 @@
 [![Apache ECharts](https://img.shields.io/badge/Apache_ECharts-6.0_SVG-AA344D?style=for-the-badge&logo=apacheecharts&logoColor=white)](https://echarts.apache.org/)
 [![Playwright QA](https://img.shields.io/badge/Playwright-100%25_PASS-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)](https://playwright.dev/)
 [![Tests](https://img.shields.io/badge/Tests-14%2F14_Passing-success?style=for-the-badge&logo=checkmarx&logoColor=white)](https://github.com/mmorfe-engineer/cimap-venezuela-renace)
-[![SSG](https://img.shields.io/badge/Output-100%25_Static_SSG-0b1d28?style=for-the-badge&logo=githubpages&logoColor=white)](https://mmorfe-engineer.github.io/cimap-venezuela-renace/)
-[![Data Integrity](https://img.shields.io/badge/Data_Integrity-100%25_Traceable-d49a37?style=for-the-badge)](https://github.com/mmorfe-engineer/cimap-venezuela-renace)
+[![Series Documentadas](https://img.shields.io/badge/Series_Documentadas-40_series_%2F_496_obs-003366?style=for-the-badge)](https://github.com/mmorfe-engineer/cimap-venezuela-renace)
+[![Contraste Independiente](https://img.shields.io/badge/Contraste_Independiente-399_comprobadas_%2F_97_trazables-d49a37?style=for-the-badge)](https://github.com/mmorfe-engineer/cimap-venezuela-renace)
 
 ---
 
@@ -22,14 +22,16 @@
 **Martin Morfe.°.**  
 *Autor, investigador y desarrollador de la plataforma*  
 *Dirección científica, diseño editorial y desarrollo tecnológico*  
-**Centro de Investigaciones Macroeconómicas y Políticas Públicas (CIMAP)**  
+**Centro de Investigación y Monitoreo de la Alta Política (CIMAP)**  
 
 **DESTINATARIO INSTITUCIONAL**  
 **Diputado Pedro Infante**  
 *Vicepresidente de la Asamblea Nacional de la República Bolivariana de Venezuela*  
 
 **URL DE PRODUCCIÓN (GitHub Pages):**  
-🔗 **[https://mmorfe-engineer.github.io/cimap-venezuela-renace/](https://mmorfe-engineer.github.io/cimap-venezuela-renace/)**
+🔗 **[https://mmorfe-engineer.github.io/cimap-venezuela-renace/](https://mmorfe-engineer.github.io/cimap-venezuela-renace/)**  
+
+*Nota de corte: Referencias externas y contrastes metodológicos atribuidos a informe complementario (corte 25/11/2026).*
 
 </div>
 
@@ -58,7 +60,7 @@
 
 La plataforma procesa y analiza el programa nacional decenal de estabilización (Horizonte 2026–2036) bajo una arquitectura estructurada en torno a:
 1. **Ratio Editorial 60/40:** 60% de visualizaciones y herramientas interactivas de datos frente al 40% de narrativa analítica y fundamentación cualitativa.
-2. **Soberanía y Trazabilidad Absoluta:** 40 series temporales (496 observaciones) con trazabilidad 1:1 a los cuadros oficiales de *República Bolivariana de Venezuela (2026)* y descarga estática en CSV UTF-8 BOM.
+2. **Soberanía y Trazabilidad Documental:** 40 series temporales (496 observaciones oficiales documentadas: 399 comprobadas en contraste independiente y 97 con trazabilidad documental primaria directa pendiente de contraste independiente) y descarga estática en CSV UTF-8 BOM.
 3. **Rigor Jurídico:** Clasificación nítida de 29 instrumentos normativos entre leyes formalmente promulgadas en Gaceta Oficial, sanciones parlamentarias e hitos de planificación.
 4. **Laboratorio de Sensibilidad MISRE 2036:** Módulo determinista transparente que reproduce con exactitud las identidades contables de la *Memoria Técnica*.
 5. **Cero Dependencias Externas en Runtime:** Tipografía empaquetada en local, renderizado SVG nativo y cero llamadas a APIs o CDNs comerciales externas.
@@ -202,13 +204,15 @@ El **Modelo Integrado de Sostenibilidad y Resurgimiento Económico (MISRE 2036)*
 
 1. **Relación Estática de Pasivos a Saldo Fijo / PIB Nominal:**
    $$\text{Ratio}_t = \frac{\text{Deuda}_{2025} (\text{USD 237.544 MMM})}{\text{PIB Nominal}_t} \times 100$$
-   *Demostración:* En 2025 toca **242,14%**; en 2031 desciende a **118,24%**; y en 2036 alcanza **81,74%**.
+   *Demostración:* En 2025 toca **242,14%**; en 2031 desciende a **118,24%**; y en 2036 alcanza **81,74%**.  
+   *(Aclaración metodológica: Los USD 237.544 MMM representan un inventario bruto heterogéneo que agrega deuda financiera, litigios, arbitrajes y pasivos bilaterales, no una deuda neta consolidada; constituye un ejercicio de sensibilidad estática a saldo fijo, no una trayectoria proyectada de desendeudamiento).*
 2. **Escala de Sensibilidad de Facturación Petrolera Bruta:**
    $$\Delta \text{Facturación} = \text{Volumen (b/d)} \times 365 \times \Delta \text{Precio (USD/bbl)}$$
-   *Demostración:* 100.000 b/d vendidos a variación de 1 USD/barril generan exactamente **USD 36,5 millones/año**.
+   *Demostración:* 100.000 b/d vendidos a variación de 1 USD/barril generan exactamente **USD 36,5 millones/año**.  
+   *(Aclaración metodológica: La facturación petrolera bruta no equivale a ingreso fiscal petrolero neto; la captura tributaria pública descuenta costos de extracción, regalías, compensaciones y participación de socios).*
 3. **Margen Brent Previsto vs. Umbral de Equilibrio Fiscal Primario:**
    $$\text{Margen}_t = \text{Brent Supuesto}_t - \text{Brent Equilibrio Fiscal}_t$$
-   *Demostración:* Inicia en **-6,9 USD/bbl** (2026) con déficit acumulado de USD 19,2 MMM hasta 2030, y alcanza superávit de **+4,2 USD/bbl** (2036).
+   *Demostración:* Inicia en **-6,9 USD/bbl** (2026) con una brecha acumulada de flujo primario antes de financiamiento de USD 19,2 MMM hasta 2030, y alcanza un margen positivo frente al equilibrio fiscal primario de **+4,2 USD/bbl** (2036). Este diferencial sobre el precio de balance no constituye un superávit fiscal general al excluir servicio de intereses y amortización de pasivos.
 
 ---
 
@@ -310,6 +314,6 @@ El corpus bibliográfico cumple con la norma **APA 7.ª edición** e incluye:
 ## 12. Licencia y Atribución
 
 **Autor, Investigador y Desarrollador:** Martin Morfe.°.  
-**Institución:** Centro de Investigaciones Macroeconómicas y Políticas Públicas (CIMAP)  
+**Institución:** Centro de Investigación y Monitoreo de la Alta Política (CIMAP)  
 **Destinatario Institucional:** Diputado Pedro Infante, Vicepresidente de la Asamblea Nacional de la República Bolivariana de Venezuela  
 **Derechos:** © 2026 Martin Morfe.°. Todos los derechos reservados. Distribución autorizada con fines de análisis estratégico, debate legislativo y formulación de políticas públicas de Estado.

@@ -1,0 +1,121 @@
+---
+import contrasts from '../data/contrasts.json';
+
+interface Props {
+  type: 'macro' | 'oil';
+}
+
+const { type } = Astro.props;
+---
+
+{type === 'macro' && (
+  <article class="disclaimer-card" id="contraste-macro">
+    <p class="eyebrow gold-rule">Informe complementario · Corte 25/11/2026</p>
+    <h3>Matriz de contraste macroeconómico externo</h3>
+    <p>
+      Comparación metodológica entre las cifras oficiales del programa nacional y las estimaciones emitidas por organismos multilaterales y centros académicos independientes. Las 40 series oficiales de la plataforma se mantienen inalteradas.
+    </p>
+
+    <div class="table-wrap">
+      <table class="disclaimer-table">
+        <caption>Tabla C1. Contraste de agregados macroeconómicos: estimación oficial 2025 y proyección oficial 2026 vs. fuentes externas</caption>
+        <thead>
+          <tr>
+            <th scope="col">Variable e indicador</th>
+            <th scope="col">Cifra oficial (Renace)</th>
+            <th scope="col">Fuente externa / Contraste</th>
+            <th scope="col">Diferencia</th>
+            <th scope="col">Explicación metodológica</th>
+          </tr>
+        </thead>
+        <tbody>
+          {contrasts.macro.map((item) => (
+            <tr>
+              <td><strong>{item.indicator}</strong></td>
+              <td>{item.official}</td>
+              <td>{item.external}</td>
+              <td><span class="badge-diff">{item.difference}</span></td>
+              <td>
+                <small>{item.methodology}</small>
+                <br />
+                <span class="contrast-source">{item.source}</span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="contrast-footer-note">
+      <em>Aclaración metodológica:</em> La divergencia en el crecimiento estimado para 2025 permanece formalmente sin reconciliación entre las fuentes; disparidades en deflactores implícitos, ponderaciones sectoriales y revisiones estadísticas operan exclusivamente como posibles factores explicativos. La coincidencia de la proyección de crecimiento para 2026 (5,0 %) con el FMI es estrictamente numérica. Referencias externas atribuidas a informe complementario (corte 25/11/2026).
+    </p>
+  </article>
+)}
+
+{type === 'oil' && (
+  <article class="disclaimer-card" id="contraste-petrolero">
+    <p class="eyebrow gold-rule">Informe complementario · Corte 25/11/2026</p>
+    <h3>Matriz de contraste petrolero mensual y requerimientos de inversión</h3>
+    <p>
+      Monitoreo puntual del mercado petrolero internacional al cierre de octubre de 2026 y clarificación de los requerimientos de capital del horizonte 2026–2036. No sustituye la serie anual de producción oficial (2020: 0,606 Mbd / 606.000 b/d según tabla 27, p. 92; estimación oficial 2025: 1,118 Mbd; proyección oficial 2036: 2,908 Mbd).
+    </p>
+
+    <div class="table-wrap">
+      <table class="disclaimer-table">
+        <caption>Tabla C2. Monitoreo petrolero mensual internacional (Octubre 2026) y requerimiento de Capex (proyecciones oficiales 2026–2036)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Concepto de análisis</th>
+            <th scope="col">Fuente / Declaración primaria</th>
+            <th scope="col">Fuente de contraste</th>
+            <th scope="col">Diferencial / Carácter</th>
+            <th scope="col">Interpretación técnica</th>
+          </tr>
+        </thead>
+        <tbody>
+          {contrasts.oil.map((item) => (
+            <tr>
+              <td><strong>{item.indicator}</strong></td>
+              <td>{item.primaryValue}</td>
+              <td>{item.contrastValue}</td>
+              <td><span class="badge-diff">{item.difference}</span></td>
+              <td>
+                <small>{item.interpretation}</small>
+                <br />
+                <span class="contrast-source">{item.source}</span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="contrast-footer-note">
+      <em>Aclaración metodológica:</em> Las cifras mensuales de octubre de 2026 corresponden a registros de coyuntura independientes; la causa técnica del diferencial de suministro de la AIE sobre capacidad sostenible no se encuentra acreditada documentalmente. La estimación de inversión acumulada de USD 160.000 millones representa un requerimiento de inversión estimado según las proyecciones oficiales del plan, no una inversión ejecutada ni comprometida contractualmente.
+    </p>
+  </article>
+)}
+
+<style>
+  .badge-diff {
+    display: inline-block;
+    padding: 0.15rem 0.45rem;
+    background: #f0f4f8;
+    color: var(--color-navy-deep);
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  .contrast-source {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-slate);
+    margin-top: 0.25rem;
+  }
+  .contrast-footer-note {
+    font-size: 0.88rem;
+    color: var(--color-slate);
+    margin-top: 1rem;
+    margin-bottom: 0;
+    border-top: 1px dashed var(--color-border);
+    padding-top: 0.6rem;
+  }
+</style>

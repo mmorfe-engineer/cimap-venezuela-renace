@@ -39,8 +39,8 @@
     "sections": [
       {
         "title": "De la norma al servicio",
-        "text": "La reforma de hidrocarburos y la Ley Orgánica de Minas cuentan con publicaciones identificables en Gaceta Oficial. En electricidad, el anexo consigna una primera discusión el 2 de junio. Un comunicado oficial del 13 de noviembre documenta un paso posterior, la sanción parlamentaria. La publicación de la norma en Gaceta requiere una constancia distinta.",
-        "source": "República Bolivariana de Venezuela (2026, pp. 14–15, 24–26, 56). Kossik (2026, 13 de noviembre)."
+        "text": "La reforma de hidrocarburos cuenta con ley en Gaceta Oficial N° 6.978 ext. (29/01/2026), reglamento en Gaceta Oficial N° 7.052 ext. (07/07/2026) y normas fiscales petroleras de determinación, declaración y pago en Gaceta Oficial N° 43.410 (07/07/2026). La Ley Orgánica de Minas está publicada en Gaceta Oficial N° 7.020 ext. (16/04/2026), aunque su reglamento general permanece sin localizar en Gaceta Oficial consultada al corte. En electricidad, tras la primera discusión del 02/06/2026, la sanción del 10/11/2026 y el anuncio de promulgación del 19/11/2026, el número de Gaceta Oficial y texto legal definitivo no fueron localizados en fuentes primarias verificadas al corte, por lo que su vigencia formal permanece indeterminada (no clasificada como vigente ni como pendiente de promulgación). En simplificación de trámites opera la Ley Orgánica para la Celeridad de Trámites (Gaceta Oficial N° 7.018 ext., 08/04/2026), mientras que en vivienda (Gacetas N° 7.065 y 7.071 ext.) y endeudamiento complementario (primera discusión 17/11/2026) se registran hitos complementarios.",
+        "source": "República Bolivariana de Venezuela (2026, pp. 14–15, 24–26, 56); Gacetas Oficiales N° 6.978 ext., 7.052 ext., 43.410, 7.020 ext., 7.018 ext., 7.065 ext., 7.071 ext.; Asamblea Nacional (10/11 y 17/11/2026); EFE (20/11/2026)."
       },
       {
         "title": "Dónde empieza la ejecución",
@@ -64,7 +64,7 @@
     "slug": "diagnostico-macroeconomico",
     "title": "Diagnóstico macroeconómico",
     "kicker": "Actividad y precios",
-    "lead": "El producto interno bruto (PIB) real creció 9,0 % en 2025. Aun con ese aumento, su nivel equivalía a 36,3 en un índice donde 2012 vale 100. Tasa y nivel cuentan dos partes distintas de la recuperación.",
+    "lead": "Según la estimación oficial, el producto interno bruto (PIB) real creció 9,0 % en 2025. Aun con ese aumento, su nivel equivalía a 36,3 en un índice donde 2012 vale 100. Para 2026–2036, el marco macroeconómico establece proyecciones oficiales condicionadas al cumplimiento del plan decenal.",
     "takeaway": "Leer en paralelo el PIB real, los precios y la posición externa permite juzgar cuánto del crecimiento se traduce en capacidad de compra duradera.",
     "sections": [
       {
@@ -94,23 +94,23 @@
     "slug": "deuda-soberana",
     "title": "Deuda y sostenibilidad soberana",
     "kicker": "Balance soberano",
-    "lead": "Al cierre de 2025, el programa identifica 237.544 millones de dólares en pasivos del sector público. La cifra agrega obligaciones con estructuras jurídicas y calendarios de pago diferentes.",
+    "lead": "Al cierre de 2025, el programa identifica 237.544 millones de dólares en pasivos del sector público. La cifra conforma un inventario bruto heterogéneo que agrega deuda externa financiera, litigios, arbitrajes y pasivos bilaterales con estructuras jurídicas disímiles, y no una deuda financiera neta consolidada.",
     "takeaway": "La medida relevante para la reconstrucción es cuánto servicio de deuda puede financiarse después de atender las necesidades esenciales y mantener la inversión.",
     "sections": [
       {
         "title": "Quién debe a quién",
-        "text": "La tabla 3 atribuye 103.322 millones de dólares al Gobierno Central y 116.279 millones a Petróleos de Venezuela, S. A. (PDVSA). El resto corresponde al Banco de Desarrollo Económico y Social de Venezuela y a Electricidad de Caracas. La consolidación sirve para analizar el conjunto. Cada obligación conserva su propio deudor y sus condiciones.",
+        "text": "La tabla 3 atribuye 103.322 millones de dólares al Gobierno Central y 116.279 millones a Petróleos de Venezuela, S. A. (PDVSA). El resto corresponde al Banco de Desarrollo Económico y Social de Venezuela y a Electricidad de Caracas. La cifra total de 237.544 millones de dólares representa un inventario bruto heterogéneo y no una deuda financiera neta unificada. Cada obligación conserva su propio deudor, su ley aplicable y sus condiciones contractuales.",
         "source": "República Bolivariana de Venezuela (2026, pp. 3, 19–20, 63–71)."
       },
       {
         "title": "El denominador también importa",
-        "text": "Al dividir el inventario identificado por el PIB nominal de 2025 se obtiene cerca de 242 %. La razón es sensible a la medición del PIB en dólares. No expresa una cuota anual de pago. El calendario de vencimientos, los atrasos, los intereses y el tratamiento de reclamos determinan la presión efectiva sobre la caja.",
+        "text": "Al dividir el inventario bruto de pasivos por el PIB nominal estimado de 2025 se obtiene cerca de 242 %. Este ratio deuda/PIB es un ejercicio de sensibilidad estática a saldo fijo de pasivos frente a la expansión proyectada del producto en dólares, no una trayectoria proyectada de desendeudamiento efectivo ni una cuota anual exigible. El calendario de vencimientos, los atrasos, los intereses acumulados y el tratamiento de reclamos determinan la presión efectiva sobre la caja.",
         "source": "República Bolivariana de Venezuela (2026, pp. 11, 19–20, 63–70)."
       },
       {
         "title": "Qué tendría que resolver un canje",
-        "text": "El programa plantea negociar con grupos de acreedores, conciliar datos y fijar un alivio compatible con la recuperación. Para evaluar una oferta futura habría que conocer plazos, tasas, moneda y tratamiento de intereses acumulados. La propuesta de negociación deja esos parámetros abiertos.",
-        "source": "República Bolivariana de Venezuela (2026, pp. 2–3, 29–30, 83–84)."
+        "text": "El programa plantea negociar con grupos de acreedores, conciliar datos y fijar un alivio compatible con la recuperación. En el plano regulatorio internacional, la Licencia General 58 de la OFAC (05/05/2026) autoriza exclusivamente servicios de asesoría financiera preliminar, no transacciones operativas, liquidación de pasivos ni negociación directa o ejecución de canjes vinculantes. En el ámbito parlamentario nacional, el proyecto de endeudamiento complementario de 2026 (primera discusión el 17/11/2026) atiende autorizaciones presupuestarias de gasto y no constituye una ley de reestructuración definitiva.",
+        "source": "República Bolivariana de Venezuela (2026, pp. 2–3, 29–30, 83–84); OFAC General License 58 (05/05/2026); Asamblea Nacional (17/11/2026)."
       },
       {
         "title": "Cuánto corresponde a intereses vencidos",
@@ -124,7 +124,7 @@
     "slug": "petroleo-y-gas",
     "title": "Petróleo y gas",
     "kicker": "Energía y divisas",
-    "lead": "La producción de crudo pasó de 0,61 millones de barriles diarios en 2020 a 1,12 en 2025. El escenario del Gobierno la sitúa en 2,908 millones en 2036. Sostener ese aumento exige inversión a lo largo de toda la cadena.",
+    "lead": "La producción de crudo se situó en 606.000 barriles diarios (0,606 Mbd) en 2020 según la tabla 27 oficial y alcanzó 1,118 Mbd en la estimación oficial de 2025. Las proyecciones oficiales del escenario del Gobierno la sitúan en 2,908 millones en 2036. Sostener ese aumento exige inversión a lo largo de toda la cadena.",
     "takeaway": "Para evaluar la renta petrolera importan el precio de la cesta venezolana, los volúmenes exportados, los costos y los términos de cada contrato.",
     "sections": [
       {
@@ -134,7 +134,7 @@
       },
       {
         "title": "Quién financia la expansión",
-        "text": "El escenario distribuye producción entre operaciones propias de PDVSA, empresas mixtas y contratos de participación productiva y licencias. El aportante de capital y el reparto del barril condicionan el flujo de caja público. El precio aplicable a la cesta venezolana difiere del Brent en la tabla sectorial.",
+        "text": "El escenario distribuye producción entre operaciones propias de PDVSA, empresas mixtas y contratos de participación productiva y licencias. La facturación petrolera bruta no equivale a ingreso fiscal petrolero neto: la captura pública neta descuenta costos operativos y de extracción, compensaciones a socios, regalías y reinversión obligatoria. El precio aplicable a la cesta venezolana difiere del Brent en la tabla sectorial.",
         "source": "República Bolivariana de Venezuela (2026, pp. 46–48, 89–91, 97)."
       },
       {
@@ -144,7 +144,7 @@
       },
       {
         "title": "El capital debe llegar antes que el barril",
-        "text": "El programa proyecta 160.000 millones de dólares de inversión petrolera para 2026–2036, con 75.000 millones a cargo de PDVSA y 85.000 millones de los socios. La participación prevista de PDVSA equivale al 46,875 %. Fechas de desembolso y obras terminadas permitirían comprobar si esa inversión llega a tiempo para producir los volúmenes proyectados.",
+        "text": "El programa proyecta 160.000 millones de dólares de inversión petrolera requerida para 2026–2036 (75.000 millones a cargo de PDVSA y 85.000 millones de los socios). Esta cifra constituye un requerimiento de inversión según el plan oficial para alcanzar las metas de volumen, no inversión ejecutada ni comprometida contractualmente. Fechas de desembolso y obras terminadas permitirían comprobar si esa inversión llega a tiempo para producir los volúmenes proyectados.",
         "source": "Morfe (2026), informe estratégico V2, pp. 6, 12–13. República Bolivariana de Venezuela (2026, pp. 89–91, 97)."
       }
     ]
@@ -174,7 +174,7 @@
       },
       {
         "title": "La caja de la transición",
-        "text": "Al sumar los déficits primarios anuales proyectados del sector público de 2026 a 2030 se obtienen 19.200 millones de dólares equivalentes. La suma excluye intereses y amortizaciones. Para 2031, el Brent proyectado supera en apenas 0,2 dólares por barril el umbral de equilibrio primario del programa. Esa diferencia de precios mide el margen del supuesto, no el impacto presupuestario de cada dólar.",
+        "text": "Al sumar los déficits primarios anuales proyectados del sector público de 2026 a 2030 se obtienen 19.200 millones de dólares equivalentes. Esta cifra expresa una brecha acumulada de flujo primario antes de financiamiento, no un requerimiento neto de endeudamiento externo nuevo. Para 2036, la cotización de Brent proyectada (68,8 USD/bbl) sitúa la brecha en un margen positivo de +4,2 USD/bbl frente al umbral de equilibrio fiscal primario (64,6 USD/bbl). Este diferencial sobre el precio de balance no constituye un superávit fiscal general, pues no incluye el servicio de intereses ni los pagos por amortización de pasivos.",
         "source": "Morfe (2026), informe estratégico V2, pp. 6, 13–14. República Bolivariana de Venezuela (2026, pp. 93–94, 97)."
       }
     ]
@@ -364,8 +364,8 @@
       },
       {
         "title": "Nota de la edición",
-        "text": "La publicación busca facilitar una conversación verificable sobre la recuperación económica de Venezuela. Las cifras conservan el corte de sus fuentes y las trayectorias futuras dependen de condiciones explícitas. Nuevas estadísticas, textos normativos y ejercicios reproducibles permitirán profundizar, contrastar y corregir esta lectura.",
-        "source": "CIMAP (2026), nota editorial de esta edición."
+        "text": "La publicación busca facilitar una conversación verificable sobre la recuperación económica de Venezuela. Las cifras oficiales de las 40 series y el marco macroeconómico conservan el corte y los parámetros del documento oficial. Las referencias y series externas de contraste se atribuyen al informe complementario (corte 25/11/2026), sin presentarse como auditoría primaria independiente. Nuevas estadísticas, textos normativos y ejercicios reproducibles permitirán profundizar, contrastar y enriquecer esta lectura.",
+        "source": "CIMAP (2026), nota editorial y contrato documental, corte 25/11/2026."
       },
       {
         "title": "Créditos institucionales y destinatario",

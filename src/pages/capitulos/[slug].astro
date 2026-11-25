@@ -6,6 +6,7 @@ import Explorer from '../../components/Explorer.astro';
 import Agenda from '../../components/Agenda.astro';
 import Lab from '../../components/Lab.astro';
 import MisreResults from '../../components/MisreResults.astro';
+import ContrastsTable from '../../components/ContrastsTable.astro';
 import chapters from '../../data/chapters.json';
 import series from '../../data/series.json';
 import diagrams from '../../data/diagrams.json';
@@ -77,6 +78,14 @@ const refCategories = [...new Set(references.map(r => r.category))];
 
         {chapterSeries.length > 0 && (
           <Explorer items={chapterSeries} />
+        )}
+
+        {chapter.id === 3 && (
+          <ContrastsTable type="macro" />
+        )}
+
+        {chapter.id === 5 && (
+          <ContrastsTable type="oil" />
         )}
 
         {chapter.id === 11 && (
