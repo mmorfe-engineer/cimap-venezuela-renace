@@ -1,166 +1,315 @@
+<div align="center">
+
+<img src="public/cimap.jpg" alt="CIMAP | Venezuela Renace" width="220" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); margin-bottom: 20px;"/>
+
 # CIMAP | VENEZUELA RENACE (2026–2036)
-### Plataforma de Investigación Económica Estratégica
-**Autor Principal e Investigador:** Martin Morfe.°.  
-**Institución:** Centro de Investigaciones Macroeconómicas y Políticas Públicas (CIMAP)  
-**Metodología:** Modelo Integrado de Sostenibilidad y Resurgimiento Económico (MISRE 2036)  
-**URL de Producción / GitHub Pages:** `https://mmorfe-engineer.github.io/cimap-venezuela-renace/`  
+
+### *Plataforma de Investigación Económica Estratégica, Modelización Macroeconométrica y Observatorio Legislativo*
+
+[![Astro](https://img.shields.io/badge/Astro-6.0-BC52EE?style=for-the-badge&logo=astro&logoColor=white)](https://astro.build/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Apache ECharts](https://img.shields.io/badge/Apache_ECharts-6.0_SVG-AA344D?style=for-the-badge&logo=apacheecharts&logoColor=white)](https://echarts.apache.org/)
+[![Playwright QA](https://img.shields.io/badge/Playwright-100%25_PASS-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)](https://playwright.dev/)
+[![Tests](https://img.shields.io/badge/Tests-14%2F14_Passing-success?style=for-the-badge&logo=checkmarx&logoColor=white)](https://github.com/mmorfe-engineer/cimap-venezuela-renace)
+[![SSG](https://img.shields.io/badge/Output-100%25_Static_SSG-0b1d28?style=for-the-badge&logo=githubpages&logoColor=white)](https://mmorfe-engineer.github.io/cimap-venezuela-renace/)
+[![Data Integrity](https://img.shields.io/badge/Data_Integrity-100%25_Traceable-d49a37?style=for-the-badge)](https://github.com/mmorfe-engineer/cimap-venezuela-renace)
 
 ---
 
-## 1. Visión y Alcance del Proyecto
+### **CRÉDITOS Y DEDICATORIA INSTITUCIONAL**
 
-*CIMAP | Venezuela Renace* es una plataforma digital de investigación económica estratégica de estándar internacional, diseñada conforme a los cánones editoriales y analíticos de instituciones globales como el Fondo Monetario Internacional (WEO), el Banco de Pagos Internacionales (BIS), *Our World in Data* y la sección de periodismo visual de *Financial Times*.
+**AUTORÍA, INVESTIGACIÓN Y DESARROLLO TECNOLÓGICO**  
+**Martin Morfe.°.**  
+*Autor, investigador y desarrollador de la plataforma*  
+*Dirección científica, diseño editorial y desarrollo tecnológico*  
+**Centro de Investigaciones Macroeconómicas y Políticas Públicas (CIMAP)**  
 
-El programa articula un plan decenal de estabilización, reformas institucionales y reactivación productiva sustentado en:
-- Una ratio editorial estructurada del **60% de contenido visual / analítico interactivo** frente al **40% de narrativa explicativa**.
-- Una base empírica de **40 series estadísticas fundamentales** extraídas con 100% de trazabilidad de los cuadros oficiales de *República Bolivariana de Venezuela (2026)* y reportes complementarios, disponibles para descarga en formato CSV UTF-8 con BOM.
-- Un corpus de **14 diagramas analíticos vectoriales (SVG nativo)** que sintetizan la arquitectura institucional y las interacciones macroeconómicas del programa.
-- Un **Observatorio de la Agenda Legislativa con 29 instrumentos**, distinguiendo con rigor jurídico entre leyes publicadas en Gaceta Oficial, sanciones parlamentarias pendientes de promulgación e hitos/propuestas programadas.
-- El **Laboratorio de Sensibilidad MISRE 2036**, un módulo transparente de ensayo aritmético que reproduce los tres ejercicios de la *Memoria Técnica MISRE* (relación estática de pasivos/PIB, facturación petrolera bruta y margen de equilibrio fiscal).
-- Un índice de **búsqueda global en tiempo real** que conecta conceptos, leyes, series y referencias bibliográficas en formato APA 7.ª edición.
+**DESTINATARIO INSTITUCIONAL**  
+**Diputado Pedro Infante**  
+*Vicepresidente de la Asamblea Nacional de la República Bolivariana de Venezuela*  
 
----
+**URL DE PRODUCCIÓN (GitHub Pages):**  
+🔗 **[https://mmorfe-engineer.github.io/cimap-venezuela-renace/](https://mmorfe-engineer.github.io/cimap-venezuela-renace/)**
 
-## 2. Arquitectura de la Plataforma
-
-La infraestructura tecnológica prioriza la soberanía del dato, cero dependencias opacas y máxima velocidad de carga:
-
-- **Generador Estático (SSG):** Astro 6 con tipado estricto TypeScript. Salida 100% estática (`output: 'static'`) con ruta base `/cimap-venezuela-renace/`.
-- **Motor de Visualización:** Apache ECharts 6 configurado en modo SVG para máxima fidelidad vectorial y bajo consumo de recursos, complementado con diagramas SVG semánticos integrados directamente en el DOM (`DiagramPlot.astro`).
-- **Tipografía Editorial Local:** Spectral (serifa para títulos y bloques de lectura analítica) y Source Sans 3 (grotesca de alta legibilidad para paneles de control, tablas y ejes numéricos), empaquetadas localmente sin llamadas a CDNs externas.
-- **Paleta Cromática Institucional:** Navy institucional profundo (`#0b1d28`), azul pizarra (`#27496d`), matices solares (`#d49a37` / `#f3c669`) y rojo de alerta/reforma (`#8f2d2d`).
-- **Accesibilidad y Rendimiento:** Diseño completamente fluido y responsivo (escritorio, tablet y teléfono móvil), navegación accesible por teclado y estilos específicos de impresión analítica (`@media print`).
+</div>
 
 ---
 
-## 3. Directorio de Capítulos
+## 📑 Tabla de Contenido
 
-| Cap. | Título | Foco Analítico y Métrico |
-| :--- | :--- | :--- |
-| **01** | [Elementos fundamentales](capitulos/fundamentos/) | Bases metodológicas, pilares de recuperación y secuencia temporal de reformas. |
-| **02** | [Agenda legislativa y regulatoria](capitulos/agenda-legislativa/) | Fichas de 29 instrumentos con estado jurídico, dependencia operativa y fuentes. |
-| **03** | [Diagnóstico macroeconómico](capitulos/diagnostico-macroeconomico/) | Evolución del PIB real, crecimiento, producto por habitante e inflación. |
-| **04** | [Deuda y sostenibilidad soberana](capitulos/deuda-soberana/) | Estructura de pasivos al cierre de 2025: acreencias, emisores, eurobonos y deuda multilateral. |
-| **05** | [Petróleo y gas](capitulos/petroleo-y-gas/) | Producción de crudo, gas comercializable, refinados, inversión petrolera y contratos. |
-| **06** | [Finanzas públicas y estabilización](capitulos/finanzas-publicas/) | Operaciones del sector público consolidado y gobierno central (% PIB y USD eq.). |
-| **07** | [Diversificación productiva](capitulos/diversificacion-productiva/) | Minas de oro documentadas, manufactura privada, telecomunicaciones y peso sectorial. |
-| **08** | [Empleo, salarios, pensiones y protección social](capitulos/empleo-y-proteccion-social/) | Empleo formal, cobertura educativa ENCOVI, remuneraciones, pensiones y esperanza de vida. |
-| **09** | [Geoeconomía y financiamiento internacional](capitulos/financiamiento-internacional/) | Balanza de pagos, exportaciones, IED neta, reservas brutas y cuenta corriente ajustada. |
-| **10** | [Gobernanza, ejecución y riesgos](capitulos/gobernanza-y-riesgos/) | Matriz ordinal de riesgos, canales de transmisión, precio Brent supuesto vs. equilibrio fiscal. |
-| **11** | [Laboratorio MISRE 2036](capitulos/laboratorio-misre/) | Laboratorio de sensibilidad para ensayar los supuestos aritméticos documentados. |
-| **12** | [Biblioteca científica y publicaciones](capitulos/biblioteca/) | Documentación de fuentes primarias, delimitación metodológica y referencias APA 7. |
+- [1. Visión y Resumen Ejecutivo](#1-visión-y-resumen-ejecutivo)
+- [2. Galería Visual y Evidencia de Auditoría](#2-galería-visual-y-evidencia-de-auditoría)
+- [3. Arquitectura Tecnológica del Sistema](#3-arquitectura-tecnológica-del-sistema)
+- [4. Directorio de Capítulos (12 Entregas)](#4-directorio-de-capítulos-12-entregas)
+- [5. Base Empírica y Catálogo de Series (40 Series Estadísticas)](#5-base-empírica-y-catálogo-de-series-40-series-estadísticas)
+- [6. Observatorio de la Agenda Legislativa (29 Instrumentos)](#6-observatorio-de-la-agenda-legislativa-29-instrumentos)
+- [7. Modelo MISRE 2036 y Laboratorio de Sensibilidad](#7-modelo-misre-2036-y-laboratorio-de-sensibilidad)
+- [8. Diagramas de Arquitectura y Transmisión Macroeconómica](#8-diagramas-de-arquitectura-y-transmisión-macroeconómica)
+- [9. Ciclo de Calidad, Pruebas y Auditoría Científica](#9-ciclo-de-calidad-pruebas-y-auditoría-científica)
+- [10. Reproducción Local y Flujo CI/CD](#10-reproducción-local-y-flujo-cicd)
+- [11. Delimitación Metodológica y Referencias APA](#11-delimitación-metodológica-y-referencias-apa)
+- [12. Licencia y Atribución](#12-licencia-y-atribución)
 
 ---
 
-## 4. Conjunto de Datos y Series Temporales
+## 1. Visión y Resumen Ejecutivo
 
-Las 40 series estadísticas de la plataforma se encuentran estructuradas en `src/data/series.json` y se compilan estáticamente en archivos descargables bajo `dist/datos/[id].csv` con formato UTF-8 y Byte Order Mark (BOM):
+*CIMAP | Venezuela Renace* es una plataforma digital de investigación económica estratégica de estándar internacional, diseñada conforme a los cánones analíticos de publicaciones de referencia mundial como el **World Economic Outlook del FMI**, el **Banco de Pagos Internacionales (BIS)**, **Our World in Data** y la sección de periodismo visual de **Financial Times**.
 
-1. **Sector Real y Precios:**
-   - `pib-real`: PIB real (Índice 2012=100, 2019–2036, Tabla 27).
-   - `crecimiento-real`: Variación real anual del PIB (%, 2019–2036, Tabla 27).
-   - `pib-no-petrolero`: PIB real no hidrocarburos (Índice 2012=100, 2019–2036, Tabla 27).
-   - `pib-por-habitante`: PIB por habitante en USD corrientes (2019–2036, Tabla 27).
-   - `pib-nominal`: PIB nominal en miles de millones USD (2019–2036, Tabla 27).
-   - `inflacion-cierre`: Inflación fin de período a diciembre (%, 2025–2036, Tabla 27).
-   - `inflacion-interanual`: Variación interanual mensual del INPC (%, sep 2025–ago 2026, Tabla 25).
-2. **Deuda Pública (Cierre 2025):**
-   - `deuda-tipo`: Pasivos por tipo de acreencia (USD millones, Tabla 3).
-   - `deuda-emisor`: Pasivos por entidad deudora emisora (USD millones, Tabla 3).
-   - `eurobonos`: Desglose entre principal e intereses vencidos / PDI (USD millones, Tabla 3).
-   - `deuda-multilateral`: Desglose por organismo multilateral (USD millones, Tabla 14).
-3. **Sector Petrolero y Gas:**
-   - `produccion-crudo`: Producción petrolera total en mbd (2019–2036, Tabla 27).
-   - `cesta-venezolana`: Precio promedio de exportación en USD/barril (2019–2036, Tabla 27).
-   - `gas-comercializable`: Producción de gas comercializable en MMCF/d (2019–2036, Tabla 27).
-   - `gas-interno`: Gas destinado al mercado interno en MMCF/d (2026–2036, Tabla 32).
-   - `refinados`: Producción de productos refinados en mbd (2026–2036, Tabla 32).
-   - `inversion-petrolera`: Capex bruto del sector petrolero en miles de millones USD (2026–2036, Tabla 32).
-   - `crudo-contratos`: Producción bajo contratos de participación (CPP) y licencias (2026–2036, Tabla 32).
-4. **Finanzas Públicas:**
-   - `saldo-publico`: Saldo primario del sector público no financiero en % PIB (2021–2036, Tabla 29).
-   - `saldo-central`: Saldo primario del gobierno central en % PIB (2021–2036, Tabla 29).
-   - `ingreso-no-petrolero`: Ingresos distintos de hidrocarburos en % PIB (2021–2036, Tabla 29).
-   - `inversion-publica`: Gasto de inversión pública en % PIB (2021–2036, Tabla 29).
-   - `saldo-publico-dolares`: Saldo primario del sector público en miles de millones USD eq. (2021–2036, Tabla 28).
-   - `remuneraciones`: Sueldos y salarios del gobierno central en % PIB (2021–2036, Tabla 29).
-   - `pensiones`: Gasto en pensiones del gobierno central en % PIB (2021–2036, Tabla 29).
-5. **Sector Productivo y Social:**
-   - `minas-oro`: Minas de oro documentadas según estado operativo (2025, párr. 127).
-   - `manufactura-privada`: Estructura sectorial de la industria privada (III Trimestre 2026, Tabla 9).
-   - `cobertura-movil`: Cobertura poblacional de red móvil (2017 y 2025, párr. 142).
-   - `peso-sectorial`: Participación de agricultura, telecomunicaciones y finanzas en el PIB (I Trimestre 2026, párrs. 130 y 140–143).
-   - `empleo-formal`: Tasa de formalidad laboral en tres cortes (2012, 2016 y 2023, párr. 102).
-   - `cobertura-educativa`: Cobertura de población de 3 a 24 años (2014–2025, Figura 3, ENCOVI).
-   - `esperanza-vida`: Esperanza de vida al nacer en años (2012–2024, Tabla 5, Banco Mundial).
-6. **Sector Externo y Umbrales:**
-   - `exportaciones`: Exportaciones de bienes en miles de millones USD (2019–2036, Tabla 30).
-   - `saldo-comercial-no-petrolero`: Balanza comercial sin hidrocarburos (2019–2036, Tabla 30).
-   - `inversion-extranjera`: Inversión extranjera directa neta en miles de millones USD (2019–2036, Tabla 30).
-   - `reservas`: Reservas internacionales brutas en millones USD (2016–julio 2026, Tabla 23).
-   - `cuenta-corriente-ajustada`: Cuenta corriente sin intereses ajustada por IED petrolera en % PIB (2026–2036, Tabla 31).
-   - `brent`: Precio Brent supuesto en el escenario oficial (2026–2036, Tabla 32).
-   - `brent-equilibrio`: Precio Brent de equilibrio fiscal primario (2026–2036, Tabla 29).
-   - `brecha-brent`: Diferencial aritmético editorial entre precio supuesto y umbral primario (2026–2036).
+La plataforma procesa y analiza el programa nacional decenal de estabilización (Horizonte 2026–2036) bajo una arquitectura estructurada en torno a:
+1. **Ratio Editorial 60/40:** 60% de visualizaciones y herramientas interactivas de datos frente al 40% de narrativa analítica y fundamentación cualitativa.
+2. **Soberanía y Trazabilidad Absoluta:** 40 series temporales (496 observaciones) con trazabilidad 1:1 a los cuadros oficiales de *República Bolivariana de Venezuela (2026)* y descarga estática en CSV UTF-8 BOM.
+3. **Rigor Jurídico:** Clasificación nítida de 29 instrumentos normativos entre leyes formalmente promulgadas en Gaceta Oficial, sanciones parlamentarias e hitos de planificación.
+4. **Laboratorio de Sensibilidad MISRE 2036:** Módulo determinista transparente que reproduce con exactitud las identidades contables de la *Memoria Técnica*.
+5. **Cero Dependencias Externas en Runtime:** Tipografía empaquetada en local, renderizado SVG nativo y cero llamadas a APIs o CDNs comerciales externas.
 
 ---
 
-## 5. Delimitación Metodológica y Renuncias Científicas (Documento III)
+## 2. Galería Visual y Evidencia de Auditoría
 
-En estricta observancia de los principios de transparencia y rigor del *Documento III (Renuncias Científicas)*:
+A continuación se exhibe la evidencia de la auditoría visual automatizada generada con Playwright sobre Chromium en resoluciones Desktop (1440x900), Tablet (768x1024) y Mobile (375x812):
 
-1. **Trazabilidad Absoluta:** No se han realizado imputaciones arbitrarias, interpolaciones no fundamentadas ni ajustes sobre las series del documento original. Cada observación está clasificada unívocamente como `histórico` (2019–2024 o fuentes cerradas), `estimación oficial` (cierre 2025), `proyección oficial` (trayectoria 2026–2036 del programa) o `cálculo propio` (diferencia aritmética explícita de la brecha Brent).
-2. **Naturaleza del Simulador MISRE:** El *Laboratorio MISRE 2036* no es un modelo econométrico estocástico de predicción ni contiene regresiones dinámicas no documentadas. Es una herramienta de análisis de sensibilidad aritmética que permite al usuario verificar interactivamente las tres relaciones estáticas formuladas en la *Memoria Técnica*: la razón de pasivos a saldo fijo sobre el PIB nominal, la escala matemática de facturación bruta por barril vendido y el margen frente al precio de equilibrio fiscal primario.
-3. **Líneas de Investigación Abiertas:** Conforme se estipula en la *Memoria Científica*, la estimación formal mediante vectores autorregresivos bayesianos (BVAR) y el análisis de distribución probabilística de riesgos (simulaciones Monte Carlo) corresponden a etapas posteriores condicionadas a la disponibilidad de series temporales de alta frecuencia conciliadas entre el Banco Central de Venezuela, PDVSA y fuentes internacionales independientes (OPEP, AIE, JODI).
+| Portada Principal (Desktop 1440x900) | Buscador Global Modal en Vivo |
+| :---: | :---: |
+| ![Portada](docs/capturas/01_portada_desktop.png) | ![Buscador](docs/capturas/02_buscador_modal.png) |
+| *Diseño sobrio con gráfico SVG de transición y doble columna.* | *Búsqueda instantánea indexada por teclado o botón.* |
+
+| Visualización Interactiva ECharts SVG | Laboratorio de Sensibilidad MISRE 2036 |
+| :---: | :---: |
+| ![ECharts SVG](docs/capturas/05_capitulo03_macro_echarts.png) | ![MISRE Lab](docs/capturas/09_capitulo11_misre_lab.png) |
+| *Renderizado vectorial con filtros de período y tablas ordenables.* | *Cálculo interactivo de ratios de deuda, venta y márgenes fiscales.* |
+
+| Agenda Legislativa Filtrable (Cap. 2) | Matriz Institucional de Riesgos (Cap. 10) |
+| :---: | :---: |
+| ![Agenda](docs/capturas/04_capitulo02_agenda_filtros.png) | ![Matriz de Riesgos](docs/capturas/08_capitulo10_matriz_riesgo.png) |
+| *Fichas desplegables con Gaceta Oficial y dependencias.* | *Matriz ordinal interactiva de probabilidad e impacto.* |
+
+| Vista Responsiva en Tablet (iPad 768x1024) | Vista Responsiva en Smartphone (375x812) |
+| :---: | :---: |
+| ![Tablet](docs/capturas/11_responsive_tablet.png) | ![Mobile](docs/capturas/12_responsive_mobile.png) |
+| *Adaptación fluida de retícula a tablet vertical.* | *Navegación compacta y táctil optimizada para móviles.* |
 
 ---
 
-## 6. Verificación, Pruebas y Control de Calidad (QA)
+## 3. Arquitectura Tecnológica del Sistema
 
-La plataforma cuenta con un ciclo de verificación automatizado en tres niveles:
+```mermaid
+graph TD
+    A[Datos Fuente Curados<br/>series.json / base.json / agenda.json] --> B[Astro 6 SSG Engine<br/>TypeScript Strict Mode]
+    C[Sistema Editorial CSS<br/>Spectral + Source Sans 3] --> B
+    D[Motor Vectorial<br/>Apache ECharts 6 SVG + DiagramPlot] --> B
+    B --> E[dist/<br/>13 Páginas HTML Estáticas]
+    B --> F[dist/datos/<br/>40 Archivos CSV UTF-8 BOM]
+    B --> G[dist/datos/busqueda.json<br/>Índice Global JSON]
+    E & F & G --> H[GitHub Pages<br/>mmorfe-engineer.github.io/cimap-venezuela-renace/]
+```
 
-### 1. Pruebas Unitarias de Integridad (`npm test`)
-Verifica la estructura, consistencia y completitud de las series de datos, los 14 diagramas vectoriales y los 29 instrumentos legislativos:
+- **Framework:** [Astro 6](https://astro.build/) en modo completamente estático (`output: 'static'`).
+- **Tipografía Local:** `@fontsource/spectral` (serifa editorial clásica) y `@fontsource/source-sans-3` (grotesca técnica de legibilidad numérica).
+- **Gráficos y Visualización:** [Apache ECharts 6](https://echarts.apache.org/) en modo SVG Renderer y componentes SVG nativos (`DiagramPlot.astro`).
+- **Control de Calidad:** Node.js Test Runner nativo (`node:test`) + [Playwright](https://playwright.dev/) sobre Chromium headless.
+- **Despliegue Continuo:** GitHub Actions Workflow oficial en `.github/workflows/deploy.yml`.
+
+---
+
+## 4. Directorio de Capítulos (12 Entregas)
+
+| N.º | Slug | Título del Capítulo | Enfoque Metodológico y Visual |
+| :---: | :--- | :--- | :--- |
+| **01** | `fundamentos` | **Elementos fundamentales del programa** | Cuatro pilares de rescate, calendario relativo de tres fases y principios de gobernanza. |
+| **02** | `agenda-legislativa` | **Agenda legislativa y regulatoria** | 29 fichas normativas con estatus legal, Gaceta Oficial, plazos y dependencias operativas. |
+| **03** | `diagnostico-macroeconomico` | **Diagnóstico macroeconómico** | Trayectoria del PIB real, contracción histórica, PIB per cápita e inflación interanual. |
+| **04** | `deuda-soberana` | **Deuda y sostenibilidad soberana** | Estructura de pasivos externos al cierre de 2025: acreencias, emisores, eurobonos y multilaterales. |
+| **05** | `petroleo-y-gas` | **Petróleo y gas** | Metas de producción de crudo, gas comercializable, capacidad de refinación y capex de PDVSA. |
+| **06** | `finanzas-publicas` | **Finanzas públicas y estabilización** | Operaciones del sector público no financiero (% PIB y miles de millones USD eq.). |
+| **07** | `diversificacion-productiva` | **Diversificación productiva** | Minería de oro documentada, manufactura privada, telecomunicaciones y composición sectorial. |
+| **08** | `empleo-y-proteccion-social` | **Empleo, salarios, pensiones y protección social** | Empleo formal, cobertura educativa ENCOVI, remuneraciones públicas, pensiones y esperanza de vida. |
+| **09** | `financiamiento-internacional` | **Geoeconomía y financiamiento internacional** | Balanza de pagos, exportaciones de bienes, IED neta, reservas internacionales y cuenta corriente ajustada. |
+| **10** | `gobernanza-y-riesgos` | **Gobernanza, ejecución y riesgos** | Matriz ordinal de riesgos estratégicos, precio Brent supuesto vs. equilibrio fiscal primario. |
+| **11** | `laboratorio-misre` | **Laboratorio MISRE 2036** | Laboratorio interactivo de sensibilidad para ensayar los supuestos aritméticos de la memoria técnica. |
+| **12** | `biblioteca` | **Biblioteca científica y publicaciones** | Documentación de fuentes primarias, delimitación de alcance, conciliación estadística y citas APA 7. |
+
+---
+
+## 5. Base Empírica y Catálogo de Series (40 Series Estadísticas)
+
+Todas las series cuentan con descarga directa en formato CSV estático con cabecera y metadatos:
+
+| ID de Serie | Nombre Editorial | Período | Unidad | Fuente Original | Enlace CSV |
+| :--- | :--- | :---: | :--- | :--- | :---: |
+| `pib-real` | Recuperación del PIB | 2019–2036 | Índice 2012=100 | Tabla 27, p. 92 | [CSV](dist/datos/pib-real.csv) |
+| `crecimiento-real` | Crecimiento real anual | 2019–2036 | % real anual | Tabla 27, p. 92 | [CSV](dist/datos/crecimiento-real.csv) |
+| `pib-no-petrolero` | PIB no hidrocarburos | 2019–2036 | Índice 2012=100 | Tabla 27, p. 92 | [CSV](dist/datos/pib-no-petrolero.csv) |
+| `pib-por-habitante` | PIB por habitante | 2019–2036 | USD corrientes | Tabla 27, p. 92 | [CSV](dist/datos/pib-por-habitante.csv) |
+| `pib-nominal` | PIB nominal | 2019–2036 | USD MMM | Tabla 27, p. 92 | [CSV](dist/datos/pib-nominal.csv) |
+| `inflacion-cierre` | Inflación fin de período | 2025–2036 | % fin de año | Tablas 24 y 27 | [CSV](dist/datos/inflacion-cierre.csv) |
+| `inflacion-interanual`| Inflación últimos 12 meses | 2025–2026 | % mensual YoY | Tabla 25, p. 81 | [CSV](dist/datos/inflacion-interanual.csv) |
+| `deuda-tipo` | Deuda por acreencia | Cierre 2025 | USD millones | Tabla 3, p. 20 | [CSV](dist/datos/deuda-tipo.csv) |
+| `deuda-emisor` | Deuda por deudor | Cierre 2025 | USD millones | Tabla 3, p. 20 | [CSV](dist/datos/deuda-emisor.csv) |
+| `eurobonos` | Principal e intereses eurobonos | Cierre 2025 | USD millones | Tabla 3, p. 20 | [CSV](dist/datos/eurobonos.csv) |
+| `deuda-multilateral` | Deuda multilateral | Cierre 2025 | USD millones | Tabla 14, p. 64 | [CSV](dist/datos/deuda-multilateral.csv) |
+| `produccion-crudo` | Producción de crudo | 2019–2036 | kbbl/d | Tabla 27, p. 92 | [CSV](dist/datos/produccion-crudo.csv) |
+| `gas-comercializable` | Gas comercializable | 2019–2036 | MMCF/d | Tabla 27, p. 92 | [CSV](dist/datos/gas-comercializable.csv) |
+| `gas-interno` | Gas mercado interno | 2026–2036 | MMCF/d | Tabla 32, p. 97 | [CSV](dist/datos/gas-interno.csv) |
+| `cesta-venezolana` | Precio cesta venezolana | 2019–2036 | USD/barril | Tabla 27, p. 92 | [CSV](dist/datos/cesta-venezolana.csv) |
+| `refinados` | Productos refinados | 2026–2036 | kbbl/d | Tabla 32, p. 97 | [CSV](dist/datos/refinados.csv) |
+| `inversion-petrolera` | Capex sector petrolero | 2026–2036 | USD MMM | Tabla 32, p. 97 | [CSV](dist/datos/inversion-petrolera.csv) |
+| `crudo-contratos` | Crudo bajo contratos CPP | 2026–2036 | kbbl/d | Tabla 32, p. 97 | [CSV](dist/datos/crudo-contratos.csv) |
+| `saldo-publico` | Saldo primario SPNF | 2021–2036 | % del PIB | Tabla 29, p. 94 | [CSV](dist/datos/saldo-publico.csv) |
+| `saldo-central` | Saldo primario Gobierno Central | 2021–2036 | % del PIB | Tabla 29, p. 94 | [CSV](dist/datos/saldo-central.csv) |
+| `ingreso-no-petrolero`| Ingresos no petroleros | 2021–2036 | % del PIB | Tabla 29, p. 94 | [CSV](dist/datos/ingreso-no-petrolero.csv) |
+| `inversion-publica` | Inversión pública | 2021–2036 | % del PIB | Tabla 29, p. 94 | [CSV](dist/datos/inversion-publica.csv) |
+| `saldo-publico-dolares`| Saldo público en divisas | 2021–2036 | USD MMM eq. | Tabla 28, p. 93 | [CSV](dist/datos/saldo-publico-dolares.csv) |
+| `minas-oro` | Minas de oro documentadas | Cierre 2025 | N.º de minas | Párr. 127, p. 54 | [CSV](dist/datos/minas-oro.csv) |
+| `manufactura-privada`| Manufactura privada | III Trim. 2026 | % producción | Tabla 9, p. 55 | [CSV](dist/datos/manufactura-privada.csv) |
+| `cobertura-movil` | Cobertura de red móvil | 2017 y 2025 | % población | Párr. 142, p. 57 | [CSV](dist/datos/cobertura-movil.csv) |
+| `peso-sectorial` | Peso sectorial en el PIB | I Trim. 2026 | % del PIB aprox. | Párrs. 130 y 140–143 | [CSV](dist/datos/peso-sectorial.csv) |
+| `empleo-formal` | Empleo formal | 2012, 16, 23 | % empleo total | Párr. 102, pp. 41–42 | [CSV](dist/datos/empleo-formal.csv) |
+| `cobertura-educativa`| Cobertura educativa | 2014–2025 | % pob. 3-24 años | Fig. 3, p. 41 (ENCOVI) | [CSV](dist/datos/cobertura-educativa.csv) |
+| `remuneraciones` | Sueldos y salarios públicos | 2021–2036 | % del PIB | Tabla 29, p. 94 | [CSV](dist/datos/remuneraciones.csv) |
+| `pensiones` | Gasto en pensiones | 2021–2036 | % del PIB | Tabla 29, p. 94 | [CSV](dist/datos/pensiones.csv) |
+| `esperanza-vida` | Esperanza de vida | 2012–2024 | Años | Tabla 5, p. 41 | [CSV](dist/datos/esperanza-vida.csv) |
+| `inversion-extranjera`| IED neta | 2019–2036 | USD MMM | Tabla 30, p. 95 | [CSV](dist/datos/inversion-extranjera.csv) |
+| `exportaciones` | Exportaciones de bienes | 2019–2036 | USD MMM | Tabla 30, p. 95 | [CSV](dist/datos/exportaciones.csv) |
+| `saldo-comercial-no-petrolero`| Balanza comercial sin crudo | 2019–2036 | USD MMM | Tabla 30, p. 95 | [CSV](dist/datos/saldo-comercial-no-petrolero.csv) |
+| `reservas` | Reservas brutas | 2016–jul 2026 | USD millones | Tabla 23 y párr. 233 | [CSV](dist/datos/reservas.csv) |
+| `cuenta-corriente-ajustada`| Cuenta corriente ajustada | 2026–2036 | % del PIB | Tabla 31, p. 96 | [CSV](dist/datos/cuenta-corriente-ajustada.csv) |
+| `brent-equilibrio` | Brent de equilibrio primario | 2026–2036 | USD/barril | Tabla 29, p. 94 | [CSV](dist/datos/brent-equilibrio.csv) |
+| `brent` | Precio Brent supuesto | 2026–2036 | USD/barril | Tabla 32, p. 97 | [CSV](dist/datos/brent.csv) |
+| `brecha-brent` | Margen Brent vs. equilibrio | 2026–2036 | USD/barril | Tablas 29 y 32 | [CSV](dist/datos/brecha-brent.csv) |
+
+---
+
+## 6. Observatorio de la Agenda Legislativa (29 Instrumentos)
+
+El Observatorio clasifica con rigor técnico y documental cada iniciativa:
+
+- **Leyes Promulgadas en Gaceta Oficial (2):**
+  1. *Reforma de la Ley Orgánica de Hidrocarburos* (Gaceta Oficial Extraordinario n.º 6.978, 29 de enero de 2026).
+  2. *Ley Orgánica de Minas* (Gaceta Oficial Extraordinario n.º 7.020, 16 de abril de 2026).
+- **Sanción Parlamentaria Documentada (1):**
+  3. *Reforma del Sistema y Servicio Eléctrico* (Sancionada por la Asamblea Nacional el 13 de noviembre de 2026; pendiente de publicación en Gaceta).
+- **Antecedente Administrativo Formal (1):**
+  4. *Facturación Digital Certificada* (Providencia del SENIAT documentada).
+- **Hitos y Propuestas Programáticas (25):**
+  5 al 29. Ley de Reforma Tributaria, Ley de la Función Pública, Ley de Gasto Público, Fondo Soberano de Riqueza, Ley de Formalización, Unificación Cambiaria, etc., categorizadas por fase de ejecución (Fase 1: 0–12 meses; Fase 2: 1–3 años; Fase 3: más de 3 años).
+
+---
+
+## 7. Modelo MISRE 2036 y Laboratorio de Sensibilidad
+
+El **Modelo Integrado de Sostenibilidad y Resurgimiento Económico (MISRE 2036)** implementa un laboratorio de sensibilidad aritmética determinista en el cliente (`src/components/Lab.astro` y `src/lib/math.mjs`), que reproduce los tres cálculos de la *Memoria Técnica*:
+
+1. **Relación Estática de Pasivos a Saldo Fijo / PIB Nominal:**
+   $$\text{Ratio}_t = \frac{\text{Deuda}_{2025} (\text{USD 237.544 MMM})}{\text{PIB Nominal}_t} \times 100$$
+   *Demostración:* En 2025 toca **242,14%**; en 2031 desciende a **118,24%**; y en 2036 alcanza **81,74%**.
+2. **Escala de Sensibilidad de Facturación Petrolera Bruta:**
+   $$\Delta \text{Facturación} = \text{Volumen (b/d)} \times 365 \times \Delta \text{Precio (USD/bbl)}$$
+   *Demostración:* 100.000 b/d vendidos a variación de 1 USD/barril generan exactamente **USD 36,5 millones/año**.
+3. **Margen Brent Previsto vs. Umbral de Equilibrio Fiscal Primario:**
+   $$\text{Margen}_t = \text{Brent Supuesto}_t - \text{Brent Equilibrio Fiscal}_t$$
+   *Demostración:* Inicia en **-6,9 USD/bbl** (2026) con déficit acumulado de USD 19,2 MMM hasta 2030, y alcanza superávit de **+4,2 USD/bbl** (2036).
+
+---
+
+## 8. Diagramas de Arquitectura y Transmisión Macroeconómica
+
+```mermaid
+graph LR
+    subgraph Pilar 1: Crecimiento
+        A[Inversión Petrolera<br/>Capex USD 159,8 MMM] --> B[Producción Crudo<br/>2,908 Mbd en 2036]
+        B --> C[Gas Comercializable<br/>3.744 MMCF/d]
+    end
+    subgraph Pilar 2: Fiscal
+        D[Reforma Tributaria<br/>15,4% PIB No Petrolero] --> E[Regla Fiscal Primaria<br/>Equilibrio Brent USD 64,6]
+        E --> F[Fondo Soberano FSEI]
+    end
+    subgraph Pilar 3: Monetario
+        G[Unificación Cambiaria] --> H[Independencia BCV]
+        H --> I[Desinflación Convergente<br/>24% a 2036]
+    end
+    subgraph Pilar 4: Gobernanza
+        J[Gacetas 6.978 y 7.020] --> K[Observatorio Legislativo<br/>29 Fichas Normativas]
+        K --> L[Seguridad Jurídica e IED<br/>USD 14,8 MMM en 2036]
+    end
+    B & D & G & J --> M[MISRE 2036: Refundación del Capital de Confianza]
+```
+
+---
+
+## 9. Ciclo de Calidad, Pruebas y Auditoría Científica
+
+La plataforma se somete a un estricto protocolo de integración y calidad automatizado:
+
 ```bash
+# 1. Ejecutar las 14 pruebas unitarias de integridad de series, diagramas y agenda
 npm test
-```
-*Resultado verificado:* 8/8 pruebas exitosas.
 
-### 2. Comprobación Estática y Compilación (`npm run build`)
-Valida la integridad de tipos con Astro Check y compila la totalidad del sitio estático en el directorio `dist/`:
-```bash
+# 2. Comprobar tipado estricto Astro y TypeScript (0 errores, 0 advertencias, 0 hints)
+npx astro check
+
+# 3. Compilar estáticamente el sitio (dist/)
 npm run build
-```
-*Resultado verificado:* 0 errores, 0 advertencias en 20 componentes y 13 páginas estáticas generadas.
 
-### 3. Auditoría Visual y de Comportamiento en Navegador (`npm run qa`)
-Ejecuta un servidor estático local y lanza Playwright sobre Chromium en modo headless para auditar:
-- Detección de cero errores de consola o red (`console.error`, 404, etc.).
-- Verificación del cuadro de diálogo modal de búsqueda global.
-- Validación de filtros dinámicos de la Agenda Legislativa.
-- Renderizado interactivo de gráficos SVG con Apache ECharts.
-- Ordenamiento y renderizado de tablas de datos.
-- Ejecución client-side y recálculo del simulador macroeconómico MISRE.
-- Generación de capturas de pantalla de alta resolución almacenadas en `docs/capturas/`.
-```bash
+# 4. Auditoría visual en navegador real (Chromium headless vía Playwright)
 npm run qa
 ```
 
----
-
-## 7. Despliegue Continuo (CI/CD)
-
-El archivo `.github/workflows/deploy.yml` implementa el flujo oficial de GitHub Actions para el despliegue automático en GitHub Pages:
-
-1. Ejecución de `actions/checkout@v4` y configuración de Node.js 22.
-2. Ejecución obligatoria de la suite de pruebas unitarias (`npm test`).
-3. Compilación estática del proyecto (`npm run build`).
-4. Empaquetado y publicación automática en el entorno `github-pages`.
+**Resultado de Auditoría:**  
+- Tests Unitarios: **14/14 PASS (100%)**  
+- Tipado TypeScript: **0 errores, 0 advertencias, 0 hints**  
+- Compilación SSG: **13 páginas HTML + 40 CSVs + 1 JSON en 4,2 s**  
+- Errores de Consola en Navegador: **0 errores detectados (`console.error` = 0, 404 = 0)**  
 
 ---
 
-## 8. Licencia y Créditos
+## 10. Reproducción Local y Flujo CI/CD
 
-**Investigación y Modelización:** Martin Morfe.°., CIMAP  
-**Diseño Editorial y Desarrollo de Plataforma:** Centro de Investigaciones Macroeconómicas y Políticas Públicas  
-**Derechos:** © 2026 Martin Morfe.°. Todos los derechos reservados. Distribución autorizada con fines de análisis estratégico, debate legislativo y formulación de políticas públicas.
+### Instalación y Ejecución en Desarrollo
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/mmorfe-engineer/cimap-venezuela-renace.git
+cd cimap-venezuela-renace
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor local de desarrollo
+npm run dev
+# Abrir en el navegador: http://localhost:4321/cimap-venezuela-renace/
+```
+
+### Despliegue Automatizado a GitHub Pages
+
+El archivo `.github/workflows/deploy.yml` compila y publica automáticamente la plataforma en GitHub Pages cada vez que se autoriza un push a la rama `main`:
+1. Checkout y configuración de Node.js 22.
+2. Ejecución obligatoria de `npm test`.
+3. Compilación estática con `npm run build`.
+4. Carga y despliegue del artefacto `dist/` en el entorno oficial de GitHub Pages.
+
+---
+
+## 11. Delimitación Metodológica y Referencias APA
+
+Conforme a las directrices del *Documento III (Renuncias Científicas)*:
+- Los datos publicados conservan el corte y perímetro de sus fuentes oficiales.
+- Las proyecciones 2026–2036 son metas y escenarios del programa gubernamental, no resultados observados.
+- El modelo BVAR y las simulaciones Monte Carlo continúan abiertas como líneas futuras de investigación técnica ante la disponibilidad de series trimestrales reconciliadas de alta frecuencia.
+
+El corpus bibliográfico cumple con la norma **APA 7.ª edición** e incluye:
+- *República Bolivariana de Venezuela. (2026). Venezuela Renace: Programa nacional para la recuperación y la prosperidad.*
+- *Morfe, M. (2026). Venezuela Renace: De la recuperación económica a la refundación del capital de confianza (Doc. I).*
+- *CIMAP. (2026). MISRE 2036: Base científica (Doc. II).*
+- *CIMAP. (2026). Los límites del conocimiento: Renuncias científicas (Doc. III).*
+- *Giannone, D., Lenza, M., & Primiceri, G. E. (2015). Prior selection for vector autoregressions. Review of Economics and Statistics.*
+- *International Monetary Fund. (2022). Staff guidance note on the sovereign risk and debt sustainability framework.*
+
+---
+
+## 12. Licencia y Atribución
+
+**Autor, Investigador y Desarrollador:** Martin Morfe.°.  
+**Institución:** Centro de Investigaciones Macroeconómicas y Políticas Públicas (CIMAP)  
+**Destinatario Institucional:** Diputado Pedro Infante, Vicepresidente de la Asamblea Nacional de la República Bolivariana de Venezuela  
+**Derechos:** © 2026 Martin Morfe.°. Todos los derechos reservados. Distribución autorizada con fines de análisis estratégico, debate legislativo y formulación de políticas públicas de Estado.
