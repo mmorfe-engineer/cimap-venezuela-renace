@@ -1,0 +1,2868 @@
+[
+  {
+    "id": "pib-real",
+    "chapter": 3,
+    "title": "La recuperación del producto interno bruto",
+    "unit": "índice de volumen, 2012 = 100",
+    "period": "2019–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 27, p. 92.",
+    "kind": "mixto",
+    "type": "line",
+    "interpretation": "El producto tocó 24,9 en 2020. En la trayectoria oficial llegaría a 71,3 en 2036, aún por debajo del nivel de 2012.",
+    "implication": "La distancia respecto al año base permite evaluar cuánto de la capacidad perdida recuperaría el país.",
+    "points": [
+      {
+        "label": "2019",
+        "value": 37.3,
+        "kind": "histórico"
+      },
+      {
+        "label": "2020",
+        "value": 24.9,
+        "kind": "histórico"
+      },
+      {
+        "label": "2021",
+        "value": 25.2,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": 29,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": 30.6,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": 33.3,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": 36.3,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 38.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 41,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 44,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 48.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 51.5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 55.8,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 59.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 62.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 65.5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 68.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 71.3,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "crecimiento-real",
+    "chapter": 3,
+    "title": "El ritmo anual de la recuperación",
+    "unit": "variación real anual (%)",
+    "period": "2019–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 27, p. 92.",
+    "kind": "mixto",
+    "type": "bar",
+    "interpretation": "La tasa se volvió positiva en 2021. El programa supone un crecimiento del 5,0 % en 2026 y del 4,2 % en 2036.",
+    "implication": "Conviene leer cada tasa junto al nivel de partida para distinguir un rebote de una expansión sostenida.",
+    "points": [
+      {
+        "label": "2019",
+        "value": -29,
+        "kind": "histórico"
+      },
+      {
+        "label": "2020",
+        "value": -33.2,
+        "kind": "histórico"
+      },
+      {
+        "label": "2021",
+        "value": 1.1,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": 15.1,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": 5.7,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": 8.9,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": 9,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 7.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 7.5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 9.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 7,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 8.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 5.9,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 5.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 5.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 4.5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 4.2,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "pib-no-petrolero",
+    "chapter": 3,
+    "title": "Actividad fuera de los hidrocarburos",
+    "unit": "índice de volumen, 2012 = 100",
+    "period": "2019–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 27, p. 92.",
+    "kind": "mixto",
+    "type": "line",
+    "interpretation": "El índice sectorial cae hasta 25,6 en 2021 y el programa proyecta 63,0 para 2036.",
+    "implication": "El seguimiento de esta serie permite contrastar una mejora petrolera con la recuperación del resto del aparato productivo.",
+    "points": [
+      {
+        "label": "2019",
+        "value": 39,
+        "kind": "histórico"
+      },
+      {
+        "label": "2020",
+        "value": 26.5,
+        "kind": "histórico"
+      },
+      {
+        "label": "2021",
+        "value": 25.6,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": 29.1,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": 30.6,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": 32.5,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": 34.7,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 36.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 38.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 40.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 43.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 45.9,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 48.9,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 51.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 54.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 57.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 60.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 63,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "pib-por-habitante",
+    "chapter": 3,
+    "title": "Producción nominal por habitante",
+    "unit": "dólares corrientes por habitante",
+    "period": "2019–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 27, p. 92.",
+    "kind": "mixto",
+    "type": "line",
+    "interpretation": "El cociente entre producto nominal y población pasa de 624 dólares en 2020 a 3.445 en la estimación de 2025.",
+    "implication": "Para estudiar el bienestar de los hogares, esta medida requiere información complementaria de precios y distribución.",
+    "points": [
+      {
+        "label": "2019",
+        "value": 1026,
+        "kind": "histórico"
+      },
+      {
+        "label": "2020",
+        "value": 624,
+        "kind": "histórico"
+      },
+      {
+        "label": "2021",
+        "value": 1286,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": 2145,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": 2115,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": 2945,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": 3445,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 4286,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 4782,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 5217,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 5778,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 6277,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 6877,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 7415,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 7962,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 8545,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 9112,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 9702,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "inflacion-interanual",
+    "chapter": 3,
+    "title": "Una lectura mensual de la inflación interanual",
+    "unit": "variación respecto al mismo mes del año anterior (%)",
+    "period": "septiembre de 2025–agosto de 2026",
+    "source": "República Bolivariana de Venezuela (2026), tabla 25, p. 81.",
+    "kind": "histórico",
+    "type": "line",
+    "interpretation": "La inflación interanual alcanza 649,5 % en marzo y se sitúa en 534,2 % en agosto de 2026. Cada punto compara doce meses.",
+    "implication": "La evaluación del poder de compra necesita remuneraciones y precios correspondientes al mismo intervalo.",
+    "points": [
+      {
+        "label": "sep 2025",
+        "value": 336.7
+      },
+      {
+        "label": "oct 2025",
+        "value": 428.7
+      },
+      {
+        "label": "nov 2025",
+        "value": 458
+      },
+      {
+        "label": "dic 2025",
+        "value": 475.3
+      },
+      {
+        "label": "ene 2026",
+        "value": 594.8
+      },
+      {
+        "label": "feb 2026",
+        "value": 617.9
+      },
+      {
+        "label": "mar 2026",
+        "value": 649.5
+      },
+      {
+        "label": "abr 2026",
+        "value": 611.9
+      },
+      {
+        "label": "may 2026",
+        "value": 524.5
+      },
+      {
+        "label": "jun 2026",
+        "value": 544.1
+      },
+      {
+        "label": "jul 2026",
+        "value": 576
+      },
+      {
+        "label": "ago 2026",
+        "value": 534.2
+      }
+    ]
+  },
+  {
+    "id": "pib-nominal",
+    "chapter": 3,
+    "title": "El tamaño de la economía a precios corrientes",
+    "unit": "miles de millones de dólares estadounidenses",
+    "period": "2019–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 27, p. 92.",
+    "kind": "mixto",
+    "type": "line",
+    "interpretation": "La estimación de 2025 es de 98,1 mil millones de dólares. El escenario oficial situaría el producto nominal en 200,9 mil millones en 2031.",
+    "implication": "Los precios y el tipo de cambio afectan esta medición en dólares. El índice de volumen permite contrastarla con la recuperación real.",
+    "points": [
+      {
+        "label": "2019",
+        "value": 30,
+        "kind": "histórico"
+      },
+      {
+        "label": "2020",
+        "value": 17.8,
+        "kind": "histórico"
+      },
+      {
+        "label": "2021",
+        "value": 36.4,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": 60.4,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": 59.7,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": 83.5,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": 98.1,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 122.5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 137.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 150.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 167.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 182.5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 200.9,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 217.8,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 235,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 253.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 271.7,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 290.6,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "inflacion-cierre",
+    "chapter": 3,
+    "title": "Inflación de cierre en el escenario macroeconómico",
+    "unit": "variación interanual a diciembre (%)",
+    "period": "2025–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 27, p. 92. La tabla 24, p. 81, ofrece mayor precisión para 2025.",
+    "kind": "mixto",
+    "type": "line",
+    "interpretation": "La tabla macroeconómica redondea la inflación de diciembre de 2025 a 475 %. El anexo de precios registra 475,3 %. La senda oficial converge a 24 % a partir de 2031.",
+    "implication": "Separar la tasa de diciembre del promedio anual evita sobrestimar la mejoría del poder adquisitivo durante la transición.",
+    "points": [
+      {
+        "label": "2025",
+        "value": 475,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 309,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 72,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 32,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 28,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 25,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 24,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 24,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 24,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 24,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 24,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 24,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "deuda-tipo",
+    "chapter": 4,
+    "title": "Los cinco grupos de pasivos identificados",
+    "unit": "millones de dólares estadounidenses",
+    "period": "cierre de 2025",
+    "source": "República Bolivariana de Venezuela (2026), tabla 3, p. 20.",
+    "kind": "estimación oficial",
+    "type": "bar",
+    "interpretation": "La deuda comercial representa el 49,1 % de los 237.544 millones de dólares identificados en el inventario oficial.",
+    "implication": "El inventario incluye obligaciones entre entes públicos. Un análisis de deuda externa requiere identificar acreedor, instrumento y residencia.",
+    "points": [
+      {
+        "label": "Multilateral",
+        "value": 4163
+      },
+      {
+        "label": "Bilateral",
+        "value": 23262
+      },
+      {
+        "label": "Comercial",
+        "value": 116549
+      },
+      {
+        "label": "Arbitral",
+        "value": 26288
+      },
+      {
+        "label": "No financiera",
+        "value": 67282
+      }
+    ]
+  },
+  {
+    "id": "deuda-emisor",
+    "chapter": 4,
+    "title": "Quién figura como deudor en el inventario",
+    "unit": "millones de dólares estadounidenses",
+    "period": "cierre de 2025",
+    "source": "República Bolivariana de Venezuela (2026), tabla 3, p. 20.",
+    "kind": "estimación oficial",
+    "type": "bar",
+    "interpretation": "Petróleos de Venezuela concentra 116.279 millones y el Gobierno central 103.322 millones. El cuadro asigna cada obligación a su deudor.",
+    "implication": "Preservar la identidad del emisor permite identificar responsables y evitar sumar obligaciones ya registradas.",
+    "points": [
+      {
+        "label": "Gobierno central",
+        "value": 103322
+      },
+      {
+        "label": "Petróleos de Venezuela",
+        "value": 116279
+      },
+      {
+        "label": "Banco de Desarrollo Económico y Social",
+        "value": 16866
+      },
+      {
+        "label": "Electricidad de Caracas",
+        "value": 1077
+      }
+    ]
+  },
+  {
+    "id": "eurobonos",
+    "chapter": 4,
+    "title": "Capital e intereses de los eurobonos",
+    "unit": "millones de dólares estadounidenses",
+    "period": "cierre de 2025",
+    "source": "República Bolivariana de Venezuela (2026), tabla 3, p. 20.",
+    "kind": "estimación oficial",
+    "type": "bar",
+    "interpretation": "La tabla distingue 64.196 millones de principal y 45.939 de intereses vencidos. El total publicado es 110.134 millones, con un millón de diferencia por redondeo.",
+    "implication": "El calendario de regularización depende del tratamiento que reciban el principal y los intereses acumulados.",
+    "points": [
+      {
+        "label": "Principal",
+        "value": 64196
+      },
+      {
+        "label": "Intereses vencidos",
+        "value": 45939
+      }
+    ]
+  },
+  {
+    "id": "deuda-multilateral",
+    "chapter": 4,
+    "title": "Exposición multilateral del Gobierno central",
+    "unit": "millones de dólares estadounidenses",
+    "period": "cierre de 2025",
+    "source": "República Bolivariana de Venezuela (2026), tabla 14, p. 64.",
+    "kind": "estimación oficial",
+    "type": "bar",
+    "interpretation": "La exposición con el Banco Interamericano de Desarrollo y CAF reúne 4.158 de los 4.163 millones identificados. Los montos incluyen intereses acumulados.",
+    "implication": "La negociación de atrasos con estos organismos requiere un tratamiento específico para cada institución.",
+    "points": [
+      {
+        "label": "Banco Interamericano de Desarrollo",
+        "value": 2735
+      },
+      {
+        "label": "CAF – banco de desarrollo",
+        "value": 1423
+      },
+      {
+        "label": "Fondo Internacional de Desarrollo Agrícola",
+        "value": 5
+      },
+      {
+        "label": "Banco Nórdico de Inversiones",
+        "value": 0
+      }
+    ]
+  },
+  {
+    "id": "produccion-crudo",
+    "chapter": 5,
+    "title": "La trayectoria del crudo venezolano",
+    "unit": "miles de barriles diarios",
+    "period": "2019–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 27, p. 92.",
+    "kind": "mixto",
+    "type": "line",
+    "interpretation": "De 606 mil barriles diarios en 2020, la producción sube a unos 1.118 mil en la estimación de 2025. El escenario llega a 2.908 mil en 2036.",
+    "implication": "El perfil anual permite contrastar los incrementos previstos con la infraestructura y el capital necesarios para sostenerlos.",
+    "points": [
+      {
+        "label": "2019",
+        "value": 1073,
+        "kind": "histórico"
+      },
+      {
+        "label": "2020",
+        "value": 606,
+        "kind": "histórico"
+      },
+      {
+        "label": "2021",
+        "value": 686,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": 759,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": 817,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": 950,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": 1118,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 1207,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 1397,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 1588,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 1807,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 2034,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 2267,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 2440,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 2594,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 2722,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 2829,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 2908,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "gas-comercializable",
+    "chapter": 5,
+    "title": "Gas natural disponible para comercialización",
+    "unit": "millones de pies cúbicos diarios",
+    "period": "2019–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 27, p. 92.",
+    "kind": "mixto",
+    "type": "area",
+    "interpretation": "El programa proyecta 3.744 millones de pies cúbicos diarios comercializables en 2036. La trayectoria incluye un retroceso en 2030.",
+    "implication": "El gas comercializable es la magnitud relevante para evaluar cuánto volumen puede destinarse al mercado interno y a la exportación.",
+    "points": [
+      {
+        "label": "2019",
+        "value": 1563,
+        "kind": "histórico"
+      },
+      {
+        "label": "2020",
+        "value": 1452,
+        "kind": "histórico"
+      },
+      {
+        "label": "2021",
+        "value": 1563,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": 1709,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": 1684,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": 1650,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": 1696,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 1720,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 1810,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 2160,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 2881,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 2772,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 3364,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 3476,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 3530,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 3737,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 3727,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 3744,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "gas-interno",
+    "chapter": 5,
+    "title": "Asignación de gas al mercado interno",
+    "unit": "millones de pies cúbicos diarios",
+    "period": "2026–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 32, p. 97.",
+    "kind": "proyección oficial",
+    "type": "area",
+    "interpretation": "La asignación interna proyectada pasa de 1.720 millones de pies cúbicos diarios en 2026 a 2.535 millones en 2036.",
+    "implication": "La recuperación industrial y eléctrica depende de que el volumen asignado pueda llegar a los centros de consumo.",
+    "points": [
+      {
+        "label": "2026",
+        "value": 1720
+      },
+      {
+        "label": "2027",
+        "value": 1810
+      },
+      {
+        "label": "2028",
+        "value": 1955
+      },
+      {
+        "label": "2029",
+        "value": 2116
+      },
+      {
+        "label": "2030",
+        "value": 2246
+      },
+      {
+        "label": "2031",
+        "value": 2345
+      },
+      {
+        "label": "2032",
+        "value": 2435
+      },
+      {
+        "label": "2033",
+        "value": 2495
+      },
+      {
+        "label": "2034",
+        "value": 2515
+      },
+      {
+        "label": "2035",
+        "value": 2530
+      },
+      {
+        "label": "2036",
+        "value": 2535
+      }
+    ]
+  },
+  {
+    "id": "cesta-venezolana",
+    "chapter": 5,
+    "title": "Precio de la cesta venezolana",
+    "unit": "dólares estadounidenses por barril",
+    "period": "2019–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 27, p. 92.",
+    "kind": "mixto",
+    "type": "line",
+    "interpretation": "El escenario incorpora 76,2 dólares por barril en 2026 y 56,4 en 2036. La producción crecería en un entorno de menor precio unitario.",
+    "implication": "Para estimar ingresos brutos de venta debe utilizarse el precio correspondiente al crudo comercializado.",
+    "points": [
+      {
+        "label": "2019",
+        "value": 47.7,
+        "kind": "histórico"
+      },
+      {
+        "label": "2020",
+        "value": 22.1,
+        "kind": "histórico"
+      },
+      {
+        "label": "2021",
+        "value": 53.6,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": 70.9,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": 53.3,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": 60.2,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": 51.4,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 76.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 71.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 62.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 60.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 58.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 56.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 56.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 56.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 56.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 56.5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 56.4,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "refinados",
+    "chapter": 5,
+    "title": "Producción de derivados refinados",
+    "unit": "miles de barriles diarios",
+    "period": "2026–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 32, p. 97.",
+    "kind": "proyección oficial",
+    "type": "area",
+    "interpretation": "La producción de derivados pasaría de 320 a 555 mil barriles diarios en el horizonte oficial.",
+    "implication": "La trayectoria permite evaluar la demanda de mantenimiento y la continuidad del suministro a refinerías.",
+    "points": [
+      {
+        "label": "2026",
+        "value": 320
+      },
+      {
+        "label": "2027",
+        "value": 338
+      },
+      {
+        "label": "2028",
+        "value": 356
+      },
+      {
+        "label": "2029",
+        "value": 381
+      },
+      {
+        "label": "2030",
+        "value": 404
+      },
+      {
+        "label": "2031",
+        "value": 431
+      },
+      {
+        "label": "2032",
+        "value": 455
+      },
+      {
+        "label": "2033",
+        "value": 479
+      },
+      {
+        "label": "2034",
+        "value": 504
+      },
+      {
+        "label": "2035",
+        "value": 530
+      },
+      {
+        "label": "2036",
+        "value": 555
+      }
+    ]
+  },
+  {
+    "id": "inversion-petrolera",
+    "chapter": 5,
+    "title": "Inversión bruta requerida en petróleo",
+    "unit": "miles de millones de dólares estadounidenses",
+    "period": "2026–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 32, p. 97.",
+    "kind": "proyección oficial",
+    "type": "bar",
+    "interpretation": "El gasto de capital alcanzaría 18,8 mil millones de dólares en 2032. Las cifras muestran la magnitud positiva de los desembolsos del cuadro original.",
+    "implication": "Comparar el calendario de inversión con la producción ayuda a identificar los años de mayor necesidad de financiamiento.",
+    "points": [
+      {
+        "label": "2026",
+        "value": 5.1
+      },
+      {
+        "label": "2027",
+        "value": 7.3
+      },
+      {
+        "label": "2028",
+        "value": 10.9
+      },
+      {
+        "label": "2029",
+        "value": 14
+      },
+      {
+        "label": "2030",
+        "value": 16.7
+      },
+      {
+        "label": "2031",
+        "value": 17.4
+      },
+      {
+        "label": "2032",
+        "value": 18.8
+      },
+      {
+        "label": "2033",
+        "value": 18.5
+      },
+      {
+        "label": "2034",
+        "value": 18.1
+      },
+      {
+        "label": "2035",
+        "value": 16.7
+      },
+      {
+        "label": "2036",
+        "value": 16.3
+      }
+    ]
+  },
+  {
+    "id": "crudo-contratos",
+    "chapter": 5,
+    "title": "Crudo bajo convenios de participación productiva y licencias",
+    "unit": "miles de barriles diarios",
+    "period": "2026–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 32, p. 97.",
+    "kind": "proyección oficial",
+    "type": "area",
+    "interpretation": "El programa atribuye 1.658 de los 2.908 mil barriles diarios proyectados en 2036 a convenios y licencias, aproximadamente un 57 %.",
+    "implication": "Seguir inversión, producción y distribución de ingresos por régimen permitiría verificar el peso económico de esta modalidad contractual.",
+    "points": [
+      {
+        "label": "2026",
+        "value": 457
+      },
+      {
+        "label": "2027",
+        "value": 566
+      },
+      {
+        "label": "2028",
+        "value": 684
+      },
+      {
+        "label": "2029",
+        "value": 826
+      },
+      {
+        "label": "2030",
+        "value": 980
+      },
+      {
+        "label": "2031",
+        "value": 1150
+      },
+      {
+        "label": "2032",
+        "value": 1283
+      },
+      {
+        "label": "2033",
+        "value": 1403
+      },
+      {
+        "label": "2034",
+        "value": 1503
+      },
+      {
+        "label": "2035",
+        "value": 1593
+      },
+      {
+        "label": "2036",
+        "value": 1658
+      }
+    ]
+  },
+  {
+    "id": "saldo-publico",
+    "chapter": 6,
+    "title": "Saldo primario del sector público no financiero",
+    "unit": "% del producto interno bruto",
+    "period": "2021–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 29, p. 94.",
+    "kind": "mixto",
+    "type": "bar",
+    "interpretation": "El programa estima un déficit primario equivalente al 4,0 % del producto en 2025 y proyecta equilibrio en 2031. El saldo comprende Gobierno central y Petróleos de Venezuela.",
+    "implication": "Un seguimiento consolidado permite detectar desequilibrios que el presupuesto central por sí solo dejaría fuera.",
+    "points": [
+      {
+        "label": "2021",
+        "value": -5.4,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": -8.7,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": -3.3,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": -3.2,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": -4,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": -3.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": -3.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": -3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": -1.9,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": -1.7,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 0,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 0.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 0.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 0.7,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 0.8,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 1,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "saldo-central",
+    "chapter": 6,
+    "title": "Saldo primario del Gobierno central",
+    "unit": "% del producto interno bruto",
+    "period": "2021–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 29, p. 94.",
+    "kind": "mixto",
+    "type": "bar",
+    "interpretation": "El superávit estimado del Gobierno central fue de 1,3 % del producto en 2025. La proyección para 2026 es un déficit de 1,7 %.",
+    "implication": "La comparación con el saldo del sector público ayuda a localizar la contribución de las operaciones petroleras.",
+    "points": [
+      {
+        "label": "2021",
+        "value": -2.6,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": -2.5,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": 1.2,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": 0.6,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": 1.3,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": -1.7,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": -1.9,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": -3.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": -2.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": -2.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": -0.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 0,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 0.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 0.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 0.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 0.4,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "ingreso-no-petrolero",
+    "chapter": 6,
+    "title": "Ingresos públicos ajenos a los hidrocarburos",
+    "unit": "% del producto interno bruto",
+    "period": "2021–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 29, p. 94.",
+    "kind": "mixto",
+    "type": "line",
+    "interpretation": "El escenario oficial proyecta que esta base de ingresos alcance un 15,4 % del producto en 2036.",
+    "implication": "La recaudación efectiva fuera del petróleo condiciona el margen fiscal para estabilizar servicios públicos.",
+    "points": [
+      {
+        "label": "2021",
+        "value": 6.1,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": 7.6,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": 9.7,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": 10.7,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": 11.1,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 10.7,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 11.8,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 12.7,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 13.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 14.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 15.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 15.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 15.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 15.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 15.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 15.4,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "inversion-publica",
+    "chapter": 6,
+    "title": "El espacio presupuestario para inversión pública",
+    "unit": "% del producto interno bruto",
+    "period": "2021–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 29, p. 94.",
+    "kind": "mixto",
+    "type": "bar",
+    "interpretation": "La inversión representó cerca de 1,2 % del producto en la estimación de 2025. La senda oficial la sitúa en 3,0 % en 2028. Se presenta el gasto con signo positivo.",
+    "implication": "El cumplimiento debe contrastarse con desembolsos y proyectos ejecutados, además de las asignaciones presupuestarias.",
+    "points": [
+      {
+        "label": "2021",
+        "value": 0.9,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": 1.1,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": 1.1,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": 1.3,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": 1.2,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 2.5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 3.5,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "saldo-publico-dolares",
+    "chapter": 6,
+    "title": "El saldo primario en dólares equivalentes",
+    "unit": "miles de millones de dólares equivalentes",
+    "period": "2021–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 28, p. 93.",
+    "kind": "mixto",
+    "type": "bar",
+    "interpretation": "Los cinco déficits primarios proyectados para 2026–2030 suman 19,2 mil millones de dólares. En 2031 el cuadro nominal presenta un superávit de 0,1 mil millones.",
+    "implication": "El saldo acumulado cuantifica una parte de la demanda de recursos. Intereses, amortizaciones y ajustes de caja requieren registros adicionales.",
+    "points": [
+      {
+        "label": "2021",
+        "value": -2,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": -5.3,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": -2,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": -2.7,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": -4,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": -3.9,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": -4.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": -4.5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": -3.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": -3.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 0.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 0.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 0.7,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 1.7,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 2.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 2.9,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "minas-oro",
+    "chapter": 7,
+    "title": "Estado de las minas de oro con reservas documentadas",
+    "unit": "número de minas",
+    "period": "diciembre de 2025",
+    "source": "República Bolivariana de Venezuela (2026), párr. 127, p. 54.",
+    "kind": "histórico",
+    "type": "bar",
+    "interpretation": "Solo dos de las 24 minas de oro con información de reservas figuraban activas. El recuento cubre exclusivamente este grupo documentado.",
+    "implication": "Las reservas geológicas necesitan información sobre operación, permisos e inversión para estimar su aporte productivo.",
+    "points": [
+      {
+        "label": "Activas",
+        "value": 2
+      },
+      {
+        "label": "Suspendidas temporalmente",
+        "value": 3
+      },
+      {
+        "label": "Inactivas",
+        "value": 19
+      }
+    ]
+  },
+  {
+    "id": "manufactura-privada",
+    "chapter": 7,
+    "title": "Composición de la manufactura privada",
+    "unit": "% de la producción manufacturera privada",
+    "period": "tercer trimestre de 2026",
+    "source": "República Bolivariana de Venezuela (2026), tabla 9, p. 55, a partir de la encuesta industrial de Conindustria.",
+    "kind": "histórico",
+    "type": "bar",
+    "interpretation": "Alimentos y bebidas representan conjuntamente el 66 % de la producción manufacturera privada recogida por la encuesta.",
+    "implication": "La recuperación de las ramas pequeñas exige seguir su producción en volumen, pues las participaciones también cambian cuando varía el sector dominante.",
+    "points": [
+      {
+        "label": "Alimentos",
+        "value": 35.2
+      },
+      {
+        "label": "Bebidas",
+        "value": 30.8
+      },
+      {
+        "label": "Químicos",
+        "value": 9.8
+      },
+      {
+        "label": "Farmacéuticos",
+        "value": 7.4
+      },
+      {
+        "label": "Plásticos y caucho",
+        "value": 5.8
+      },
+      {
+        "label": "Productos no metálicos",
+        "value": 2.6
+      },
+      {
+        "label": "Metales",
+        "value": 1.4
+      },
+      {
+        "label": "Maquinaria y equipos",
+        "value": 1.4
+      },
+      {
+        "label": "Madera y papel",
+        "value": 1.4
+      },
+      {
+        "label": "Textiles y calzado",
+        "value": 0.9
+      },
+      {
+        "label": "Automotriz y autopartes",
+        "value": 0.6
+      },
+      {
+        "label": "Otras industrias",
+        "value": 2.7
+      }
+    ]
+  },
+  {
+    "id": "cobertura-movil",
+    "chapter": 7,
+    "title": "Cobertura de red móvil en dos cortes",
+    "unit": "% de la población",
+    "period": "2017 y 2025",
+    "source": "República Bolivariana de Venezuela (2026), párr. 142, p. 57.",
+    "kind": "histórico",
+    "type": "slope",
+    "interpretation": "La proporción de población cubierta por la red móvil desciende veinte puntos porcentuales entre los dos cortes publicados.",
+    "implication": "La ampliación de redes debe poder verificarse con cobertura territorial y poblacional comparable.",
+    "points": [
+      {
+        "label": "2017",
+        "value": 99
+      },
+      {
+        "label": "2025",
+        "value": 79
+      }
+    ]
+  },
+  {
+    "id": "peso-sectorial",
+    "chapter": 7,
+    "title": "Peso de tres actividades en el producto",
+    "unit": "% aproximado del producto interno bruto",
+    "period": "primer trimestre de 2026",
+    "source": "República Bolivariana de Venezuela (2026), párrs. 130 y 140–143, pp. 54 y 56–57.",
+    "kind": "estimación oficial",
+    "type": "bar",
+    "interpretation": "El programa sitúa a las telecomunicaciones en torno al 12 % del producto, frente a cerca del 5 % de la agricultura. Son tres actividades seleccionadas.",
+    "implication": "Sus diferencias de escala ayudan a contextualizar las prioridades de conectividad, alimentos y acceso al financiamiento.",
+    "points": [
+      {
+        "label": "Agricultura",
+        "value": 5
+      },
+      {
+        "label": "Telecomunicaciones",
+        "value": 12
+      },
+      {
+        "label": "Intermediación financiera y seguros",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "id": "empleo-formal",
+    "chapter": 8,
+    "title": "El empleo formal en tres cortes publicados",
+    "unit": "% del empleo total",
+    "period": "2012, 2016 y 2023",
+    "source": "República Bolivariana de Venezuela (2026), párr. 102, pp. 41–42.",
+    "kind": "histórico",
+    "type": "bar",
+    "interpretation": "La participación formal disminuye entre los dos primeros cortes y llega al 45,5 % en 2023.",
+    "implication": "La cobertura contributiva depende de la formalidad, por lo que la tasa de desempleo por sí sola resulta insuficiente.",
+    "points": [
+      {
+        "label": "2012",
+        "value": 42.1
+      },
+      {
+        "label": "2016",
+        "value": 38
+      },
+      {
+        "label": "2023",
+        "value": 45.5
+      }
+    ]
+  },
+  {
+    "id": "cobertura-educativa",
+    "chapter": 8,
+    "title": "Participación educativa de niños y jóvenes",
+    "unit": "% de la población de 3 a 24 años",
+    "period": "2014–2025",
+    "source": "República Bolivariana de Venezuela (2026), figura 3, p. 41, con datos de la Encuesta Nacional de Condiciones de Vida.",
+    "kind": "histórico",
+    "type": "line",
+    "interpretation": "La cobertura educativa pasa de 73 % en 2014 a 64 % en 2025, con varios años de recuperación parcial.",
+    "implication": "Observar permanencia y reinserción junto con cobertura facilita identificar dónde se pierde acceso al sistema.",
+    "points": [
+      {
+        "label": "2014",
+        "value": 73
+      },
+      {
+        "label": "2015",
+        "value": 72
+      },
+      {
+        "label": "2016",
+        "value": 76
+      },
+      {
+        "label": "2017",
+        "value": 71
+      },
+      {
+        "label": "2018",
+        "value": 69
+      },
+      {
+        "label": "2019",
+        "value": 70
+      },
+      {
+        "label": "2020",
+        "value": 65
+      },
+      {
+        "label": "2021",
+        "value": 65
+      },
+      {
+        "label": "2022",
+        "value": 63
+      },
+      {
+        "label": "2023",
+        "value": 66
+      },
+      {
+        "label": "2024",
+        "value": 66
+      },
+      {
+        "label": "2025",
+        "value": 64
+      }
+    ]
+  },
+  {
+    "id": "remuneraciones",
+    "chapter": 8,
+    "title": "Remuneraciones del personal del Gobierno central",
+    "unit": "% del producto interno bruto",
+    "period": "2021–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 29, p. 94.",
+    "kind": "mixto",
+    "type": "line",
+    "interpretation": "En 2025 el programa estima una masa de sueldos públicos equivalente al 11,8 % del producto. Las cifras muestran el gasto con signo positivo.",
+    "implication": "La masa salarial debe relacionarse con empleo público y precios para interpretar la remuneración real por trabajador.",
+    "points": [
+      {
+        "label": "2021",
+        "value": 11,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": 15.5,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": 15.6,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": 13.7,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": 11.8,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 10.8,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 11.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 11.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 11,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 11,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 10.8,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 10.7,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 10.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 10.5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 10.5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 10.4,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "pensiones",
+    "chapter": 8,
+    "title": "Gasto en pensiones del Gobierno central",
+    "unit": "% del producto interno bruto",
+    "period": "2021–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 29, p. 94.",
+    "kind": "mixto",
+    "type": "line",
+    "interpretation": "La partida identificada como pensiones sube de 1,5 % del producto en 2023 a 2,4 % en la estimación de 2025. Los ceros iniciales corresponden al registro presupuestario de la tabla. Se presenta el gasto con signo positivo.",
+    "implication": "El gasto agregado requiere complementarse con cobertura y monto real por pensionista para evaluar protección efectiva.",
+    "points": [
+      {
+        "label": "2021",
+        "value": 0,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": 0,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": 1.5,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": 2.1,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": 2.4,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 3.5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 3.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 3.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 3.9,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 4.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 4.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 4.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 4.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 3.9,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 3.8,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 3.8,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "esperanza-vida",
+    "chapter": 8,
+    "title": "Esperanza de vida al nacer en Venezuela",
+    "unit": "años",
+    "period": "2012–2024",
+    "source": "República Bolivariana de Venezuela (2026), tabla 5, p. 41, con datos del Banco Mundial.",
+    "kind": "histórico",
+    "type": "line",
+    "interpretation": "La esperanza de vida al nacer pasa de 73,1 años en 2012 a 72,7 en 2024, tras alcanzar 71,5 en 2021.",
+    "implication": "La salud poblacional ofrece una referencia para seguir los resultados sociales de largo plazo.",
+    "points": [
+      {
+        "label": "2012",
+        "value": 73.1
+      },
+      {
+        "label": "2013",
+        "value": 73.1
+      },
+      {
+        "label": "2014",
+        "value": 72.8
+      },
+      {
+        "label": "2015",
+        "value": 73
+      },
+      {
+        "label": "2016",
+        "value": 72
+      },
+      {
+        "label": "2017",
+        "value": 71.9
+      },
+      {
+        "label": "2018",
+        "value": 72.6
+      },
+      {
+        "label": "2019",
+        "value": 72.8
+      },
+      {
+        "label": "2020",
+        "value": 72.4
+      },
+      {
+        "label": "2021",
+        "value": 71.5
+      },
+      {
+        "label": "2022",
+        "value": 72.6
+      },
+      {
+        "label": "2023",
+        "value": 72.5
+      },
+      {
+        "label": "2024",
+        "value": 72.7
+      }
+    ]
+  },
+  {
+    "id": "inversion-extranjera",
+    "chapter": 9,
+    "title": "Inversión extranjera directa neta",
+    "unit": "miles de millones de dólares estadounidenses",
+    "period": "2019–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 30, p. 95.",
+    "kind": "mixto",
+    "type": "bar",
+    "interpretation": "El flujo neto estimado es negativo en 2025. El programa proyecta entradas netas de 2,6 mil millones de dólares en 2026 y de 14,8 mil millones en 2036.",
+    "implication": "La ejecución financiera de proyectos permite contrastar estas entradas con la senda que supone el programa.",
+    "points": [
+      {
+        "label": "2019",
+        "value": 1.4,
+        "kind": "histórico"
+      },
+      {
+        "label": "2020",
+        "value": -1,
+        "kind": "histórico"
+      },
+      {
+        "label": "2021",
+        "value": -0.4,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": 1.8,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": -2.1,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": -2.5,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": -0.8,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 2.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 4.7,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 7.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 10.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 13,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 14.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 15.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 15.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 15.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 15.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 14.8,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "exportaciones",
+    "chapter": 9,
+    "title": "Exportaciones de bienes",
+    "unit": "miles de millones de dólares estadounidenses",
+    "period": "2019–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 30, p. 95.",
+    "kind": "mixto",
+    "type": "area",
+    "interpretation": "La proyección sitúa las exportaciones de bienes en 82,7 mil millones de dólares en 2036 frente a 24,9 mil millones estimados en 2025.",
+    "implication": "La capacidad de generar divisas depende del volumen vendido, el precio realizado y el contenido importado.",
+    "points": [
+      {
+        "label": "2019",
+        "value": 21.9,
+        "kind": "histórico"
+      },
+      {
+        "label": "2020",
+        "value": 8.7,
+        "kind": "histórico"
+      },
+      {
+        "label": "2021",
+        "value": 15.5,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": 21.6,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": 19.7,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": 25.1,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": 24.9,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": 38.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": 40.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": 40.7,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": 46.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": 51.5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": 58.7,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": 64.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": 69.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": 74.5,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": 78.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": 82.7,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "saldo-comercial-no-petrolero",
+    "chapter": 9,
+    "title": "Balanza comercial sin hidrocarburos",
+    "unit": "miles de millones de dólares estadounidenses",
+    "period": "2019–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 30, p. 95.",
+    "kind": "mixto",
+    "type": "bar",
+    "interpretation": "El saldo sin hidrocarburos sería deficitario durante todo el período proyectado. El déficit llegaría a 47,9 mil millones de dólares en 2036.",
+    "implication": "La capacidad exportadora y la sustitución económicamente viable de importaciones condicionan la diversificación externa.",
+    "points": [
+      {
+        "label": "2019",
+        "value": -7.2,
+        "kind": "histórico"
+      },
+      {
+        "label": "2020",
+        "value": -10,
+        "kind": "histórico"
+      },
+      {
+        "label": "2021",
+        "value": -11.1,
+        "kind": "histórico"
+      },
+      {
+        "label": "2022",
+        "value": -8.3,
+        "kind": "histórico"
+      },
+      {
+        "label": "2023",
+        "value": -10.1,
+        "kind": "histórico"
+      },
+      {
+        "label": "2024",
+        "value": -12.8,
+        "kind": "histórico"
+      },
+      {
+        "label": "2025",
+        "value": -12.1,
+        "kind": "estimación oficial"
+      },
+      {
+        "label": "2026",
+        "value": -29.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2027",
+        "value": -33.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2028",
+        "value": -36.2,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2029",
+        "value": -40.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2030",
+        "value": -44.8,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2031",
+        "value": -45.6,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2032",
+        "value": -49.1,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2033",
+        "value": -49.3,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2034",
+        "value": -49.4,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2035",
+        "value": -48.8,
+        "kind": "proyección oficial"
+      },
+      {
+        "label": "2036",
+        "value": -47.9,
+        "kind": "proyección oficial"
+      }
+    ]
+  },
+  {
+    "id": "reservas",
+    "chapter": 9,
+    "title": "Reservas internacionales brutas",
+    "unit": "millones de dólares estadounidenses",
+    "period": "cierres de 2016–2025 y julio de 2026",
+    "source": "República Bolivariana de Venezuela (2026), tabla 23 y párr. 233, p. 80.",
+    "kind": "histórico",
+    "type": "line",
+    "interpretation": "Tras el mínimo de 2020, las reservas brutas alcanzan 13.309 millones en diciembre de 2025 y 12.826 millones en julio de 2026. Este último punto es un corte mensual.",
+    "implication": "El desglose por activo resulta necesario para evaluar la liquidez utilizable.",
+    "points": [
+      {
+        "label": "2016",
+        "value": 10995
+      },
+      {
+        "label": "2017",
+        "value": 9665
+      },
+      {
+        "label": "2018",
+        "value": 8840
+      },
+      {
+        "label": "2019",
+        "value": 6633
+      },
+      {
+        "label": "2020",
+        "value": 6367
+      },
+      {
+        "label": "2021",
+        "value": 10917
+      },
+      {
+        "label": "2022",
+        "value": 9924
+      },
+      {
+        "label": "2023",
+        "value": 9817
+      },
+      {
+        "label": "2024",
+        "value": 10266
+      },
+      {
+        "label": "2025",
+        "value": 13309
+      },
+      {
+        "label": "jul 2026",
+        "value": 12826
+      }
+    ]
+  },
+  {
+    "id": "cuenta-corriente-ajustada",
+    "chapter": 9,
+    "title": "Cuenta corriente ajustada sin intereses",
+    "unit": "% del producto interno bruto",
+    "period": "2026–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 31, p. 96.",
+    "kind": "proyección oficial",
+    "type": "bar",
+    "interpretation": "El indicador incorpora la inversión extranjera directa y la repatriación de dividendos de los proyectos de hidrocarburos. La proyección cambia de signo en 2031 y vuelve a terreno negativo en 2032.",
+    "implication": "Para estudiar las necesidades de divisas conviene identificar los flujos incluidos antes de comparar este ajuste con la cuenta corriente convencional.",
+    "points": [
+      {
+        "label": "2026",
+        "value": -0.9
+      },
+      {
+        "label": "2027",
+        "value": -1.7
+      },
+      {
+        "label": "2028",
+        "value": -2.3
+      },
+      {
+        "label": "2029",
+        "value": -1.4
+      },
+      {
+        "label": "2030",
+        "value": -1.3
+      },
+      {
+        "label": "2031",
+        "value": 0.2
+      },
+      {
+        "label": "2032",
+        "value": -0.1
+      },
+      {
+        "label": "2033",
+        "value": 0.5
+      },
+      {
+        "label": "2034",
+        "value": 1.3
+      },
+      {
+        "label": "2035",
+        "value": 1.6
+      },
+      {
+        "label": "2036",
+        "value": 2.6
+      }
+    ]
+  },
+  {
+    "id": "brent-equilibrio",
+    "chapter": 10,
+    "title": "Precio Brent de equilibrio fiscal primario",
+    "unit": "dólares estadounidenses por barril",
+    "period": "2026–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 29, p. 94.",
+    "kind": "proyección oficial",
+    "type": "line",
+    "interpretation": "Según el programa, el precio de equilibrio fiscal primario desciende de 106 dólares en 2026 a 64,6 en 2036.",
+    "implication": "La comparación con el supuesto anual del Brent permite localizar períodos de exposición a una caída de los precios.",
+    "points": [
+      {
+        "label": "2026",
+        "value": 106
+      },
+      {
+        "label": "2027",
+        "value": 101
+      },
+      {
+        "label": "2028",
+        "value": 86.8
+      },
+      {
+        "label": "2029",
+        "value": 78.8
+      },
+      {
+        "label": "2030",
+        "value": 76.1
+      },
+      {
+        "label": "2031",
+        "value": 68.6
+      },
+      {
+        "label": "2032",
+        "value": 68.1
+      },
+      {
+        "label": "2033",
+        "value": 67.7
+      },
+      {
+        "label": "2034",
+        "value": 66.2
+      },
+      {
+        "label": "2035",
+        "value": 65.7
+      },
+      {
+        "label": "2036",
+        "value": 64.6
+      }
+    ]
+  },
+  {
+    "id": "brent",
+    "chapter": 10,
+    "title": "Precio Brent supuesto en el escenario",
+    "unit": "dólares estadounidenses por barril",
+    "period": "2026–2036",
+    "source": "República Bolivariana de Venezuela (2026), tabla 32, p. 97.",
+    "kind": "proyección oficial",
+    "type": "line",
+    "interpretation": "El marco reduce el Brent de 99,1 dólares en 2026 a 68,8 en 2031 y mantiene ese supuesto hasta 2036.",
+    "implication": "La sensibilidad de las cuentas fiscales y externas puede examinarse variando este precio y conservando explícitos los demás supuestos.",
+    "points": [
+      {
+        "label": "2026",
+        "value": 99.1
+      },
+      {
+        "label": "2027",
+        "value": 85.5
+      },
+      {
+        "label": "2028",
+        "value": 75.8
+      },
+      {
+        "label": "2029",
+        "value": 72.3
+      },
+      {
+        "label": "2030",
+        "value": 70.3
+      },
+      {
+        "label": "2031",
+        "value": 68.8
+      },
+      {
+        "label": "2032",
+        "value": 68.8
+      },
+      {
+        "label": "2033",
+        "value": 68.8
+      },
+      {
+        "label": "2034",
+        "value": 68.8
+      },
+      {
+        "label": "2035",
+        "value": 68.8
+      },
+      {
+        "label": "2036",
+        "value": 68.8
+      }
+    ]
+  },
+  {
+    "id": "brecha-brent",
+    "chapter": 10,
+    "title": "Margen entre Brent supuesto y umbral fiscal",
+    "unit": "dólares estadounidenses por barril",
+    "period": "2026–2036",
+    "source": "República Bolivariana de Venezuela (2026), tablas 29 y 32, pp. 94 y 97. Cálculo editorial: precio supuesto menos precio de equilibrio primario.",
+    "kind": "cálculo propio",
+    "type": "bar",
+    "interpretation": "La diferencia calculada es −6,9 dólares por barril en 2026 y +4,2 en 2036. El signo positivo indica que el supuesto supera el precio de equilibrio del programa.",
+    "implication": "Esta distancia resume la exposición del escenario al precio en cada año. Volúmenes, tributos y gastos también pueden cambiar.",
+    "points": [
+      {
+        "label": "2026",
+        "value": -6.9
+      },
+      {
+        "label": "2027",
+        "value": -15.5
+      },
+      {
+        "label": "2028",
+        "value": -11.0
+      },
+      {
+        "label": "2029",
+        "value": -6.5
+      },
+      {
+        "label": "2030",
+        "value": -5.8
+      },
+      {
+        "label": "2031",
+        "value": 0.2
+      },
+      {
+        "label": "2032",
+        "value": 0.7
+      },
+      {
+        "label": "2033",
+        "value": 1.1
+      },
+      {
+        "label": "2034",
+        "value": 2.6
+      },
+      {
+        "label": "2035",
+        "value": 3.1
+      },
+      {
+        "label": "2036",
+        "value": 4.2
+      }
+    ]
+  }
+]
