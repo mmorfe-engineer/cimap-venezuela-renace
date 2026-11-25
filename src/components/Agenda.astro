@@ -1,0 +1,26 @@
+---
+import items from '../data/agenda.json';
+import Icon from './Icon.astro';
+const filters=[['phase','Fase'],['status','Situación jurídica'],['pillar','Pilar'],['instrument','Instrumento']] as const;
+---
+<section id="agenda" class="module"><p class="eyebrow gold-rule">Observatorio legislativo</p><h2>Instrumentos y situación documentada</h2><p>El corte corresponde a noviembre de 2026. Abre una ficha para consultar su dependencia de ejecución y el respaldo documental.</p>
+<div class="filter-controls"><label class="wide">Buscar en las fichas<input type="search" id="q-law" placeholder="Ej. electricidad o consulta pública"/></label>{filters.map(([key,label])=><label>{label}<select data-law={key}><option value="">Todos</option>{[...new Set(items.map(x=>x[key]))].map(v=><option>{v}</option>)}</select></label>)}</div><div class="results-bar"><strong role="status" id="law-count">{items.length} fichas</strong><button type="button" id="law-clear">Restablecer filtros</button></div>
+{items.map(a=><details class="law" id={'ficha-'+a.id} data-phase={a.phase} data-status={a.status} data-pillar={a.pillar} data-instrument={a.instrument}><summary><div><small>{a.status} · {a.phase}</small><strong>{a.title}</strong></div><Icon name="chev"/></summary><div class="law-body"><p>{a.detail}</p><dl><dt>Dependencia</dt><dd>{a.dependency}</dd><dt>Instrumento · Pilar</dt><dd>{a.instrument} · {a.pillar}</dd></dl><p class="source">{a.source}</p></div></details>)}</section>
+<script>
+import {normalize} from '../lib/edition';
+const q=document.querySelector<HTMLInputElement>('#q-law')!;
+const filters=[...document.querySelectorAll<HTMLSelectElement>('select[data-law]')];
+const laws=[...document.querySelectorAll<HTMLDetailsElement>('.law')];
+function update(){
+ const terms=normalize(q.value).split(/\s+/);let count=0;
+ for(const law of laws){
+ const found=terms.every(t=>normalize(law.textContent??'').includes(t))&&filters.every(f=>!f.value||f.value===law.dataset[f.dataset.law!]);
+ law.hidden=!found;if(found)count++;
+ }
+ document.querySelector('#law-count')!.textContent=count===0?'Sin coincidencias':count+' fichas';
+}
+q.oninput=update;filters.forEach(f=>f.onchange=update);
+document.querySelector('#law-clear')!.addEventListener('click',()=>{q.value='';filters.forEach(f=>f.value='');update()});
+function direct(){const d=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(d instanceof HTMLDetailsElement){if(d.hidden){q.value='';filters.forEach(f=>f.value='');update()}d.open=true;d.scrollIntoView()}}
+direct();addEventListener('hashchange',direct);
+</script>

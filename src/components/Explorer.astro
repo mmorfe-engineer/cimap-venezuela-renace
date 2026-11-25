@@ -1,0 +1,304 @@
+---
+import { type ChartSeries, format, root } from '../lib/edition';
+import Icon from './Icon.astro';
+
+interface Props {
+  items: ChartSeries[];
+}
+
+const { items } = Astro.props;
+---
+
+<section class="module" id="explorador">
+  <p class="eyebrow gold-rule">Atlas de datos</p>
+  <h2>Explorador estadístico</h2>
+
+  <label class="var-select">
+    Variable
+    <select id="series-select">
+      {items.map((s) => (
+        <option value={s.id}>{s.title}</option>
+      ))}
+    </select>
+  </label>
+
+  {items.map((s, i) => {
+    const hasYearFilters = s.points.length > 2 && s.points.every((p) => /^\d{4}$/.test(p.label));
+    return (
+      <figure
+        class="series-panel"
+        id={'serie-' + s.id}
+        data-chart={JSON.stringify(s)}
+        hidden={i > 0}
+      >
+        <div class="plot-head">
+          <div>
+            <small>{s.period} · {s.kind}</small>
+            <h3>{s.title}</h3>
+            <p>{s.unit}</p>
+          </div>
+        </div>
+
+        <div class="plot" role="img" aria-label={`${s.title}. Valores en la tabla adjunta.`}></div>
+        <div class="series-legend"></div>
+
+        {hasYearFilters && (
+          <div class="period-filters">
+            <label>
+              Desde
+              <select class="range-start">
+                {s.points.map((p) => (
+                  <option value={p.label}>{p.label}</option>
+                ))}
+              </select>
+            </label>
+            <label>
+              Hasta
+              <select class="range-end">
+                {s.points.map((p, j) => (
+                  <option value={p.label} selected={j === s.points.length - 1}>
+                    {p.label}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
+        )}
+
+        <figcaption>
+          <p>{s.interpretation}</p>
+          <p><strong>Implicación estratégica.</strong> {s.implication}</p>
+          <p class="source">{s.source}</p>
+        </figcaption>
+
+        <details class="observations">
+          <summary>Consultar tabla de datos</summary>
+          <div class="table-wrap">
+            <table>
+              <caption>{s.title} · {s.unit}</caption>
+              <thead>
+                <tr>
+                  {['Período o categoría', 'Valor', 'Naturaleza'].map((v, k) => (
+                    <th scope="col">
+                      <button type="button" data-sort={k}>{v} ↕</button>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {s.points.map((p) => (
+                  <tr>
+                    <td>{p.label}</td>
+                    <td>{format(p.value, 3)}</td>
+                    <td>{'kind' in p ? p.kind : s.kind}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </details>
+
+        <a class="csv" href={root + 'datos/' + s.id + '.csv'} download>
+          <Icon name="down" size={15} /> Descargar serie CSV
+        </a>
+      </figure>
+    );
+  })}
+</section>
+
+<script>
+  import { init, use } from 'echarts/core';
+  import { BarChart, LineChart } from 'echarts/charts';
+  import { GridComponent, TooltipComponent } from 'echarts/components';
+  import { SVGRenderer } from 'echarts/renderers';
+  import { format } from '../lib/edition';
+  import type { ChartSeries } from '../lib/edition';
+
+  use([BarChart, LineChart, GridComponent, TooltipComponent, SVGRenderer]);
+
+  const select = document.querySelector<HTMLSelectElement>('#series-select')!;
+  const panels = [...document.querySelectorAll<HTMLElement>('.series-panel')];
+  const colors: Record<string, string> = {
+    'histórico': '#1d455f',
+    'estimación oficial': '#916211',
+    'proyección oficial': '#1774a0',
+    'cálculo propio': '#426a51'
+  };
+
+  let chart: ReturnType<typeof init> | undefined;
+  let observer: ResizeObserver | undefined;
+
+  function display() {
+    observer?.disconnect();
+    chart?.dispose();
+
+    const panel = panels.find((p) => p.id === 'serie-' + select.value);
+    if (!panel) return;
+
+    panels.forEach((p) => {
+      p.hidden = p !== panel;
+    });
+
+    const s: ChartSeries = JSON.parse(panel.dataset.chart!);
+    const data = s.points.map((p) => ({
+      label: p.label,
+      value: p.value,
+      kind: ('kind' in p && p.kind) || s.kind
+    }));
+
+    const start = panel.querySelector<HTMLSelectElement>('.range-start');
+    const end = panel.querySelector<HTMLSelectElement>('.range-end');
+    const points = data.filter(
+      (p) => (!start || +p.label >= +start.value) && (!end || +p.label <= +end.value)
+    );
+
+    if (start && end) {
+      start.onchange = () => {
+        if (+start.value > +end.value) end.value = start.value;
+        display();
+      };
+      end.onchange = () => {
+        if (+start.value > +end.value) start.value = end.value;
+        display();
+      };
+    }
+
+    const kinds = [...new Set(points.map((p) => p.kind))];
+    const plot = panel.querySelector<HTMLElement>('.plot')!;
+    const horizontal = s.type === 'bar' && points.some((p) => p.label.length > 8);
+
+    plot.style.height = horizontal ? Math.max(260, points.length * 50) + 'px' : '290px';
+    chart = init(plot, undefined, { renderer: 'svg' });
+
+    const categories = {
+      type: 'category' as const,
+      data: points.map((p) => p.label),
+      inverse: horizontal,
+      axisTick: { show: false },
+      axisLabel: {
+        fontFamily: 'Source Sans 3',
+        color: '#345061',
+        width: horizontal ? Math.min(145, plot.clientWidth * 0.34) : 55,
+        overflow: 'break' as const
+      }
+    };
+
+    const values = {
+      type: 'value' as const,
+      axisLabel: {
+        color: '#496575',
+        fontSize: 11,
+        formatter: (v: number) => Intl.NumberFormat('es-VE', { notation: 'compact' }).format(v)
+      },
+      splitLine: { lineStyle: { color: '#dce4e4' } }
+    };
+
+    const legend = panel.querySelector<HTMLElement>('.series-legend')!;
+    legend.replaceChildren(
+      ...kinds.map((k) => {
+        const el = document.createElement('span');
+        el.style.setProperty('--legend', colors[k] || '#216786');
+        el.textContent = k;
+        return el;
+      })
+    );
+
+    const bar = s.type === 'bar';
+    chart.setOption({
+      animation: false,
+      grid: {
+        left: horizontal ? '40%' : 48,
+        right: 20,
+        top: 18,
+        bottom: 36,
+        outerBoundsMode: 'none'
+      },
+      textStyle: { fontFamily: 'Source Sans 3' },
+      tooltip: {
+        trigger: 'axis',
+        renderMode: 'richText',
+        confine: true,
+        formatter: (args: { dataIndex: number }[]) => {
+          const p = points[args[0].dataIndex];
+          return p.label + ' · ' + p.kind + '\n' + format(p.value, 3) + ' ' + s.unit;
+        }
+      },
+      xAxis: horizontal ? values : categories,
+      yAxis: horizontal ? categories : values,
+      series: kinds.map((k) => ({
+        name: k,
+        type: bar ? 'bar' : 'line',
+        stack: bar ? 'bar' : undefined,
+        barMaxWidth: 32,
+        symbolSize: 5,
+        showSymbol: points.length < 20,
+        lineStyle: { width: 3, type: k === 'proyección oficial' ? 'dashed' : 'solid' },
+        areaStyle: s.type === 'area' ? { opacity: 0.12 } : undefined,
+        itemStyle: { color: colors[k] || '#216786' },
+        data: points.map((p, i) =>
+          p.kind === k || (!bar && points[i + 1]?.kind === k) ? p.value : null
+        )
+      }))
+    });
+
+    observer = new ResizeObserver(() => chart?.resize());
+    observer.observe(plot);
+
+    const tbody = panel.querySelector('tbody')!;
+    function fill(rows: typeof points) {
+      tbody.replaceChildren(
+        ...rows.map((p) => {
+          const tr = document.createElement('tr');
+          for (const value of [p.label, format(p.value, 3), p.kind]) {
+            const cell = tr.insertCell();
+            cell.textContent = value;
+          }
+          return tr;
+        })
+      );
+    }
+    fill(points);
+
+    panel.querySelectorAll<HTMLElement>('th').forEach((th) => th.removeAttribute('aria-sort'));
+    panel.querySelectorAll<HTMLButtonElement>('[data-sort]').forEach((b) => {
+      b.onclick = () => {
+        const th = b.closest('th')!;
+        const direction = th.getAttribute('aria-sort') === 'ascending' ? -1 : 1;
+        panel.querySelectorAll('th').forEach((t) => t.removeAttribute('aria-sort'));
+        th.setAttribute('aria-sort', direction === 1 ? 'ascending' : 'descending');
+        const k = Number(b.dataset.sort);
+        fill(
+          [...points].sort((a, b) =>
+            direction *
+            (k === 1
+              ? a.value - b.value
+              : (k === 0 ? a.label : a.kind).localeCompare(
+                  k === 0 ? b.label : b.kind,
+                  'es',
+                  { numeric: true }
+                ))
+          )
+        );
+      };
+    });
+  }
+
+  function route() {
+    const id = location.hash.slice(1);
+    if (id.startsWith('serie-') && panels.some((p) => p.id === id)) {
+      select.value = id.slice(6);
+      display();
+      document.getElementById('explorador')?.scrollIntoView();
+    } else {
+      display();
+    }
+  }
+
+  select.onchange = () => {
+    history.replaceState(null, '', '#serie-' + select.value);
+    display();
+  };
+
+  addEventListener('hashchange', route);
+  route();
+</script>

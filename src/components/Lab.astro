@@ -1,0 +1,27 @@
+---
+import base from '../data/base.json';
+---
+<section class="module lab" id="laboratorio"><p class="eyebrow gold-rule">Laboratorio de sensibilidad</p><h2>Ensayar los supuestos</h2><p>Elige un ejercicio y modifica sus entradas. Los resultados mantienen las unidades y los perímetros de la memoria técnica.</p>
+<label>Ejercicio<select id="lab-mode"><option value="deuda">Pasivos a saldo fijo / producto nominal</option><option value="venta">Precio y facturación petrolera bruta</option><option value="margen">Brent y umbral de equilibrio primario</option></select></label>
+<div class="lab-board"><div class="lab-inputs">
+<div data-mode="deuda"><label>Año del denominador<select id="gdp">{base.map(r=><option value={r.PIB_USD_MMM}>{r.anio} · {r.PIB_USD_MMM.toLocaleString('es-VE')} mil millones USD</option>)}</select></label><p>El numerador conserva los 237,544 mil millones de dólares estadounidenses (USD) del inventario de 2025.</p></div>
+<div data-mode="venta" hidden><label>Barriles vendidos al día<input id="volume" type="number" min="0" max="10000000" value="100000" step="any"/></label><label>Variación de precio (USD/barril)<input id="price" type="number" min="-200" max="200" value="1" step="any"/></label></div>
+<div data-mode="margen" hidden><label>Año y umbral oficial<select id="threshold">{base.filter(r=>r.Brent_equilibrio!=null).map(r=><option value={r.Brent_equilibrio!} data-brent={r.Brent_USD}>{r.anio} · {r.Brent_equilibrio} USD/barril</option>)}</select></label><label>Precio Brent supuesto (USD/barril)<input id="brent" type="number" min="0" max="500" step="any" value="99.1"/></label></div></div>
+<div class="lab-result" aria-live="polite"><small>Resultado condicionado</small><output id="lab-value">242,14 %</output><span id="lab-formula">237,544 ÷ 98,1 × 100</span></div></div><p id="lab-reading">El crecimiento nominal reduce la razón a saldo fijo. La trayectoria efectiva exige conocer servicio, amortizaciones y nueva financiación.</p><p class="source">Morfe (2026), Memoria técnica MISRE, tablas A2–A4. República Bolivariana de Venezuela (2026), tablas 3, 27, 28 y 32.</p></section>
+<script>
+import {fixedDebtRatio,annualGrossChange,fiscalMargin} from '../lib/math.mjs';
+import {format} from '../lib/edition';
+const mode=document.querySelector<HTMLSelectElement>('#lab-mode')!;
+const value=(id:string)=>Number((document.getElementById(id) as HTMLInputElement).value);
+const threshold=document.querySelector<HTMLSelectElement>('#threshold')!;
+function calculate(){
+ const m=mode.value;document.querySelectorAll<HTMLElement>('[data-mode]').forEach(d=>d.hidden=d.dataset.mode!==m);
+ const out=document.querySelector<HTMLOutputElement>('#lab-value')!,formula=document.querySelector('#lab-formula')!,reading=document.querySelector('#lab-reading')!;
+ const inputs=[...document.querySelectorAll<HTMLInputElement>('[data-mode="'+m+'"] input')];
+ if(inputs.some(i=>!i.value.trim()||!i.validity.valid)){out.value='Revisa las entradas';formula.textContent='Introduce valores numéricos dentro de los límites del campo.';reading.textContent='';return}
+ if(m==='deuda'){out.value=format(fixedDebtRatio(237.544,value('gdp')))+' %';formula.textContent='237,544 ÷ '+format(value('gdp'))+' × 100';reading.textContent='El crecimiento nominal reduce la razón a saldo fijo. La trayectoria efectiva exige conocer servicio, amortizaciones y nueva financiación.'}
+ if(m==='venta'){out.value=format(annualGrossChange(value('volume'),value('price')))+' millones USD';formula.textContent=format(value('volume'))+' × 365 × '+format(value('price'))+' ÷ 1.000.000';reading.textContent='La variación anual de facturación bruta depende del volumen efectivamente vendido. Para estimar el ingreso fiscal se requieren costos, contratos y régimen tributario.'}
+ if(m==='margen'){out.value=format(fiscalMargin(value('brent'),value('threshold')))+' USD/barril';formula.textContent=format(value('brent'))+' − '+format(value('threshold'));reading.textContent='El signo indica la posición del precio ensayado frente al umbral oficial del año. Un margen negativo obliga a revisar las fuentes de financiación previstas.'}
+}
+threshold.onchange=()=>{document.querySelector<HTMLInputElement>('#brent')!.value=threshold.selectedOptions[0].dataset.brent!;calculate()};document.querySelector('.lab')!.addEventListener('input',calculate);calculate();
+</script>

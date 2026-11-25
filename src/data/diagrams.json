@@ -1,0 +1,562 @@
+[
+  {
+    "id": "cuatro-pilares",
+    "chapter": 1,
+    "title": "Cuatro pilares para una recuperación coordinada",
+    "layout": "hub",
+    "period": "Noviembre de 2026",
+    "source": "República Bolivariana de Venezuela (2026), p. 24, párrs. 46–48. Morfe (2026), informe estratégico V2, p. 3.",
+    "treatment": "Clasificación del programa",
+    "legend": "Cada rama representa un pilar. El esquema agrupa objetivos, sin asignarles pesos.",
+    "interpretation": "El programa vincula el aumento de la producción con la gestión fiscal, la estabilidad de la moneda y la capacidad de las instituciones.",
+    "implication": "Una mejora en un frente puede perder alcance si los otros tres siguen restringiendo la inversión o el poder adquisitivo.",
+    "anchor": "Recuperación económica",
+    "rows": [
+      {
+        "left": "Crecimiento",
+        "right": "Reconstruir la capacidad productiva"
+      },
+      {
+        "left": "Política fiscal",
+        "right": "Hacer sostenible el uso de recursos públicos"
+      },
+      {
+        "left": "Moneda y finanzas",
+        "right": "Estabilizar los precios y normalizar las finanzas"
+      },
+      {
+        "left": "Gobernanza",
+        "right": "Mejorar la transparencia y la ejecución"
+      }
+    ],
+    "unit": "Pilares programáticos"
+  },
+  {
+    "id": "tres-fases",
+    "chapter": 1,
+    "title": "El calendario relativo de las reformas",
+    "layout": "path",
+    "period": "Desde el inicio de la ejecución",
+    "source": "República Bolivariana de Venezuela (2026), pp. 33–34, párrs. 78–83. Morfe (2026), informe estratégico V2, p. 3.",
+    "treatment": "Clasificación del programa",
+    "legend": "Los hitos indican el horizonte previsto desde el arranque. La distancia gráfica entre ellos es convencional.",
+    "interpretation": "La normalización concentra las medidas de estabilización. La recuperación amplía la inversión y la última fase busca diversificar la producción.",
+    "implication": "La coordinación entre políticas y la protección social atraviesan las tres fases, incluso cuando una reforma se prolonga de una a otra.",
+    "steps": [
+      {
+        "key": "0–12 meses",
+        "name": "Normalización",
+        "text": "Ancla fiscal, régimen cambiario y datos públicos."
+      },
+      {
+        "key": "1–3 años",
+        "name": "Recuperación",
+        "text": "Inversión, reconstrucción e infraestructura."
+      },
+      {
+        "key": "Más de 3 años",
+        "name": "Diversificación",
+        "text": "Mayor valor agregado, servicios y reglas fiscales."
+      }
+    ],
+    "unit": "Meses y años desde el inicio"
+  },
+  {
+    "id": "tramite-electrico",
+    "chapter": 2,
+    "title": "La reforma eléctrica, paso a paso",
+    "layout": "path",
+    "period": "Corte documental de noviembre de 2026",
+    "source": "República Bolivariana de Venezuela (2026), p. 56, párr. 138.",
+    "treatment": "Síntesis editorial del programa",
+    "legend": "El primer hito está documentado. Los dos siguientes corresponden a pasos pendientes según el programa.",
+    "interpretation": "El proyecto abre la discusión sobre qué empresas podrían participar en generación, transmisión, distribución y comercialización.",
+    "implication": "La planificación de una inversión necesita comprobar el texto final y su publicación oficial antes de aplicar las reglas propuestas.",
+    "steps": [
+      {
+        "key": "2 de junio de 2026",
+        "name": "Primera discusión",
+        "text": "La Asamblea Nacional aprobó el proyecto en primera discusión."
+      },
+      {
+        "key": "Pendiente al corte",
+        "name": "Consulta pública",
+        "text": "El programa identifica la consulta como paso siguiente."
+      },
+      {
+        "key": "Pendiente al corte",
+        "name": "Segunda discusión",
+        "text": "La aprobación del texto seguía pendiente."
+      }
+    ],
+    "unit": "Hitos del trámite"
+  },
+  {
+    "id": "canales-estabilidad",
+    "chapter": 3,
+    "title": "Tres canales de la estabilización monetaria",
+    "layout": "links",
+    "period": "Noviembre de 2026",
+    "source": "República Bolivariana de Venezuela (2026), p. 30, párrs. 66–69.",
+    "treatment": "Síntesis editorial del programa",
+    "legend": "Cada flecha vincula un instrumento previsto con el objetivo que le atribuye el programa.",
+    "interpretation": "La estrategia combina control monetario, transparencia cambiaria y recomposición gradual de reservas. Sus efectos dependen de la posición externa y la trayectoria fiscal.",
+    "implication": "La evaluación exige comparar la evolución de precios, del mercado cambiario y de las reservas bajo definiciones constantes.",
+    "columns": [
+      "Instrumento",
+      "Objetivo"
+    ],
+    "rows": [
+      {
+        "left": "Control de la base monetaria",
+        "right": "Moderar la inflación"
+      },
+      {
+        "left": "Unificación del mercado cambiario",
+        "right": "Reducir distorsiones de precios relativos"
+      },
+      {
+        "left": "Reconstrucción de reservas",
+        "right": "Amortiguar perturbaciones externas"
+      }
+    ],
+    "unit": "Relaciones cualitativas"
+  },
+  {
+    "id": "pasivos-reestructuracion",
+    "chapter": 4,
+    "title": "De la identificación del pasivo al acuerdo",
+    "layout": "path",
+    "period": "Noviembre de 2026",
+    "source": "República Bolivariana de Venezuela (2026), pp. 83–84, párrs. 244–247.",
+    "treatment": "Síntesis editorial del programa",
+    "legend": "La secuencia agrupa requisitos analíticos y de negociación. Los hitos carecen de fecha de cierre acordada.",
+    "interpretation": "El Gobierno propone identificar deuda elegible, calibrar el alivio y abrir el intercambio de datos con los acreedores. El documento conserva la distinción jurídica entre emisores.",
+    "implication": "El servicio anual y el saldo de deuda permiten examinar aspectos distintos del acuerdo. La comparación entre ofertas requiere un mismo calendario y perímetro.",
+    "steps": [
+      {
+        "key": "Perímetro",
+        "name": "Identificar",
+        "text": "Separar emisor, instrumento y acreedor."
+      },
+      {
+        "key": "Capacidad de pago",
+        "name": "Calibrar",
+        "text": "Relacionar el servicio con el marco fiscal y social."
+      },
+      {
+        "key": "Negociación",
+        "name": "Acordar",
+        "text": "Compartir datos y buscar un trato coherente entre acreedores."
+      }
+    ],
+    "unit": "Relaciones cualitativas"
+  },
+  {
+    "id": "rutas-gas",
+    "chapter": 5,
+    "title": "Dos vías de recuperación del gas",
+    "layout": "links",
+    "period": "Diagnóstico de 2015–2025 y perspectiva desde 2028",
+    "source": "República Bolivariana de Venezuela (2026), pp. 52–53, párrs. 122–124.",
+    "treatment": "Síntesis editorial del programa",
+    "legend": "La flecha identifica la condición de oferta de cada segmento. El horizonte de nuevos campos es una expectativa oficial.",
+    "interpretation": "La extracción de crudo condiciona el gas asociado. Los nuevos desarrollos gasíferos dependen de financiación, alianzas técnicas y condiciones externas.",
+    "implication": "Conviene distinguir cuánto volumen se recuperaría junto al petróleo y cuánto requeriría que un nuevo proyecto alcanzara producción comercial.",
+    "columns": [
+      "Segmento",
+      "Condición de oferta"
+    ],
+    "rows": [
+      {
+        "left": "Gas asociado",
+        "right": "Actividad extractiva de los campos petroleros"
+      },
+      {
+        "left": "Nuevos proyectos gasíferos",
+        "right": "Financiación y alianzas para desarrollar los campos"
+      }
+    ],
+    "unit": "Relaciones cualitativas"
+  },
+  {
+    "id": "captura-publica",
+    "chapter": 5,
+    "layout": "path",
+    "title": "El recorrido de un barril hasta las cuentas públicas",
+    "period": "Marco analítico 2026–2036",
+    "source": "Morfe (2026), informe estratégico V2, p. 13, y memoria técnica, pp. 3–4. República Bolivariana de Venezuela (2026), tabla 8, p. 52.",
+    "treatment": "Lectura conceptual de la memoria técnica",
+    "legend": "Los eslabones separan cantidades físicas, valor comercial y derechos económicos. Cada magnitud necesita su propia conciliación.",
+    "interpretation": "El valor bruto depende del volumen efectivamente vendido y de su precio realizado. El régimen contractual determina cómo se pagan costos y cómo se distribuye la renta.",
+    "implication": "Para estimar el ingreso público efectivo por proyecto hacen falta contratos, volúmenes de venta, costos, regalías, impuestos y participación estatal, evitando duplicidades.",
+    "steps": [
+      {
+        "key": "Volumen físico",
+        "name": "De la producción",
+        "text": "Conciliar refinación, diluyentes e inventarios."
+      },
+      {
+        "key": "Valor comercial",
+        "name": "A la venta",
+        "text": "Aplicar al volumen vendido el precio realizado."
+      },
+      {
+        "key": "Flujo público",
+        "name": "Al fisco",
+        "text": "Identificar regalías, impuestos y resultado estatal."
+      }
+    ],
+    "unit": "Relaciones cualitativas"
+  },
+  {
+    "id": "anclas-fiscales",
+    "chapter": 6,
+    "title": "Tres lecturas de la posición fiscal",
+    "layout": "links",
+    "period": "Noviembre de 2026",
+    "source": "República Bolivariana de Venezuela (2026), p. 28, párrs. 63–65.",
+    "treatment": "Síntesis editorial del programa",
+    "legend": "Cada fila relaciona un indicador del programa con la pregunta que permite responder.",
+    "interpretation": "El saldo global resume el resultado fiscal. Aislar la renta de los hidrocarburos y observar cuánto gasto corriente cubren los demás ingresos permite examinar la dependencia estructural.",
+    "implication": "Las tres métricas deben conservar el mismo perímetro institucional y distinguir ingresos permanentes de entradas extraordinarias.",
+    "columns": [
+      "Indicador",
+      "Pregunta de análisis"
+    ],
+    "rows": [
+      {
+        "left": "Saldo fiscal global",
+        "right": "¿Cuál es el balance de ingresos y gastos?"
+      },
+      {
+        "left": "Saldo primario no hidrocarburífero",
+        "right": "¿Cuál es el balance primario sin renta petrolera?"
+      },
+      {
+        "left": "Cobertura del gasto corriente",
+        "right": "¿Qué proporción cubren los ingresos no hidrocarburíferos?"
+      }
+    ],
+    "unit": "Relaciones cualitativas"
+  },
+  {
+    "id": "dependencias-sectoriales",
+    "chapter": 7,
+    "title": "Qué necesita cada cadena para producir",
+    "layout": "links",
+    "period": "Noviembre de 2026",
+    "source": "República Bolivariana de Venezuela (2026), pp. 53–58, párrs. 125–146. Morfe (2026), informe estratégico V2, p. 8.",
+    "treatment": "Síntesis editorial de la evidencia y los criterios CIMAP",
+    "legend": "Las flechas enlazan actividades con restricciones operativas destacadas en el diagnóstico.",
+    "interpretation": "El transporte, la electricidad, el crédito y la conectividad afectan de manera distinta a cada sector. Una restricción compartida puede reducir el beneficio de una inversión aislada.",
+    "implication": "Contrastar la disponibilidad efectiva del servicio con la demanda de cada cadena permite priorizar proyectos de infraestructura.",
+    "columns": [
+      "Actividad",
+      "Condición habilitante"
+    ],
+    "rows": [
+      {
+        "left": "Agricultura",
+        "right": "Almacenamiento, vías rurales y crédito"
+      },
+      {
+        "left": "Minería",
+        "right": "Trazabilidad, protección ambiental y contratos"
+      },
+      {
+        "left": "Industria",
+        "right": "Electricidad fiable, crédito y cadenas de valor"
+      },
+      {
+        "left": "Telecomunicaciones",
+        "right": "Inversión en redes y cobertura territorial"
+      },
+      {
+        "left": "Turismo",
+        "right": "Conectividad aérea y servicios fiables"
+      }
+    ],
+    "unit": "Relaciones cualitativas"
+  },
+  {
+    "id": "proteccion-ingreso",
+    "chapter": 8,
+    "title": "Cómo llega la política económica al hogar",
+    "layout": "links",
+    "period": "Noviembre de 2026",
+    "source": "República Bolivariana de Venezuela (2026), pp. 25 y 28, párrs. 55 y 62–63.",
+    "treatment": "Síntesis editorial del programa",
+    "legend": "Cada vínculo describe un mecanismo previsto. La mejora efectiva requiere evidencia sobre cobertura y poder adquisitivo.",
+    "interpretation": "La formalización amplía la posibilidad de acceder a protección. Pensiones, salarios públicos y transferencias actúan sobre ingresos distintos y alcanzan a poblaciones diferentes.",
+    "implication": "Para evaluar su efecto distributivo hacen falta precios comparables, montos pagados y cobertura efectiva de los hogares.",
+    "columns": [
+      "Medida",
+      "Canal hacia el hogar"
+    ],
+    "rows": [
+      {
+        "left": "Incentivos a la formalización",
+        "right": "Acceso sostenible a beneficios sociales"
+      },
+      {
+        "left": "Recuperación de salarios y pensiones",
+        "right": "Ingreso laboral público y de jubilación"
+      },
+      {
+        "left": "Reforma de subsidios y transferencias",
+        "right": "Protección focalizada durante el ajuste"
+      }
+    ],
+    "unit": "Relaciones cualitativas"
+  },
+  {
+    "id": "fuentes-financiamiento",
+    "chapter": 9,
+    "title": "El financiamiento previsto tiene varias puertas",
+    "layout": "links",
+    "period": "Noviembre de 2026",
+    "source": "República Bolivariana de Venezuela (2026), pp. 35–36, párrs. 91–93.",
+    "treatment": "Síntesis editorial del programa",
+    "legend": "Las flechas indican la contribución esperada de cada grupo. Los montos y las fechas de desembolso quedan fuera del esquema.",
+    "interpretation": "El programa asocia el apoyo multilateral a la normalización de relaciones y, cuando corresponda, a la regularización de atrasos. El tratamiento bilateral y el canje privado buscan aliviar los pagos.",
+    "implication": "Para proyectar la caja disponible hay que distinguir un desembolso nuevo de una obligación cuyo vencimiento se difiere.",
+    "columns": [
+      "Contraparte",
+      "Contribución prevista"
+    ],
+    "rows": [
+      {
+        "left": "Instituciones multilaterales",
+        "right": "Apoyo externo, proyectos y fortalecimiento institucional"
+      },
+      {
+        "left": "Acreedores bilaterales",
+        "right": "Reperfilamiento y posible crédito concesional"
+      },
+      {
+        "left": "Acreedores privados",
+        "right": "Canje ordenado de obligaciones elegibles"
+      }
+    ],
+    "unit": "Relaciones cualitativas"
+  },
+  {
+    "id": "matriz-riesgo",
+    "chapter": 10,
+    "title": "Dónde golpea cada riesgo",
+    "layout": "matrix",
+    "period": "Noviembre de 2026",
+    "source": "República Bolivariana de Venezuela (2026), tabla 4, pp. 37–38.",
+    "treatment": "Valoración ordinal del programa",
+    "legend": "B = bajo, M = medio, A = alto. Los pilares son 1 crecimiento, 2 fiscal, 3 monetario y financiero y 4 gobernanza. La fuente asigna probabilidad media a los doce riesgos.",
+    "interpretation": "El retraso de la reestructuración, la limitada capacidad administrativa y las sanciones persistentes comparten impacto alto en los tres primeros pilares. El choque ambiental también compromete la gobernanza.",
+    "implication": "Las respuestas deben atender la vía por la que se transmite cada riesgo. El detalle accesible reúne las medidas que el programa asocia a cada uno.",
+    "columns": [
+      "Crecimiento",
+      "Fiscal",
+      "Monetario y financiero",
+      "Gobernanza"
+    ],
+    "risks": [
+      {
+        "name": "Recuperación petrolera lenta",
+        "probability": "Medio",
+        "impact": [
+          "Medio",
+          "Medio",
+          "Medio",
+          "Bajo"
+        ],
+        "response": "Diversificar las fuentes de crecimiento e ingresos."
+      },
+      {
+        "name": "Choque global del petróleo",
+        "probability": "Medio",
+        "impact": [
+          "Medio",
+          "Alto",
+          "Alto",
+          "Medio"
+        ],
+        "response": "Distinguir un choque transitorio de uno permanente al ajustar el balance fiscal."
+      },
+      {
+        "name": "Choque ambiental",
+        "probability": "Medio",
+        "impact": [
+          "Medio",
+          "Alto",
+          "Medio",
+          "Alto"
+        ],
+        "response": "Buscar recursos concesionales y reforzar estándares de construcción."
+      },
+      {
+        "name": "Brecha de financiamiento externo",
+        "probability": "Medio",
+        "impact": [
+          "Medio",
+          "Medio",
+          "Alto",
+          "Bajo"
+        ],
+        "response": "Movilizar apoyo multilateral y sostener la credibilidad de las políticas."
+      },
+      {
+        "name": "Fragilidad bancaria",
+        "probability": "Medio",
+        "impact": [
+          "Medio",
+          "Medio",
+          "Alto",
+          "Bajo"
+        ],
+        "response": "Fortalecer la supervisión y los mecanismos de resolución."
+      },
+      {
+        "name": "Demora en reestructurar la deuda",
+        "probability": "Medio",
+        "impact": [
+          "Alto",
+          "Alto",
+          "Alto",
+          "Medio"
+        ],
+        "response": "Negociar con transparencia y coordinación entre acreedores."
+      },
+      {
+        "name": "Persistencia de la inflación",
+        "probability": "Medio",
+        "impact": [
+          "Medio",
+          "Medio",
+          "Alto",
+          "Bajo"
+        ],
+        "response": "Reforzar la independencia monetaria y reducir las fuentes fiscales de emisión."
+      },
+      {
+        "name": "Fragmentación cambiaria",
+        "probability": "Medio",
+        "impact": [
+          "Medio",
+          "Medio",
+          "Alto",
+          "Bajo"
+        ],
+        "response": "Mejorar el acceso de los agentes económicos a las divisas."
+      },
+      {
+        "name": "Inestabilidad política",
+        "probability": "Medio",
+        "impact": [
+          "Medio",
+          "Medio",
+          "Medio",
+          "Alto"
+        ],
+        "response": "Promover reformas institucionales."
+      },
+      {
+        "name": "Baja aceptación de las reformas",
+        "probability": "Medio",
+        "impact": [
+          "Medio",
+          "Alto",
+          "Medio",
+          "Medio"
+        ],
+        "response": "Secuenciar las medidas y focalizar la protección social."
+      },
+      {
+        "name": "Capacidad administrativa limitada",
+        "probability": "Medio",
+        "impact": [
+          "Alto",
+          "Alto",
+          "Alto",
+          "Medio"
+        ],
+        "response": "Movilizar asistencia técnica y ajustar el calendario."
+      },
+      {
+        "name": "Persistencia de sanciones",
+        "probability": "Medio",
+        "impact": [
+          "Alto",
+          "Alto",
+          "Alto",
+          "Medio"
+        ],
+        "response": "Fortalecer la interlocución y la reintegración diplomática."
+      }
+    ],
+    "unit": "Escala ordinal"
+  },
+  {
+    "id": "circuito-seguimiento",
+    "chapter": 10,
+    "title": "La ejecución necesita información de retorno",
+    "layout": "path",
+    "period": "Noviembre de 2026",
+    "source": "República Bolivariana de Venezuela (2026), pp. 34–35, párrs. 84–86.",
+    "treatment": "Síntesis editorial del programa",
+    "legend": "La secuencia expresa funciones propuestas. El resultado de la revisión puede modificar decisiones posteriores.",
+    "interpretation": "El marco previsto conecta coordinación ministerial, equipos de ejecución y revisión periódica. La consulta a empresas, trabajadores y comunidades aporta observaciones sobre el terreno.",
+    "implication": "Publicar el responsable, el indicador y la decisión que siguió a cada revisión permitiría comprobar el aprendizaje institucional.",
+    "steps": [
+      {
+        "key": "Coordinación",
+        "name": "Priorizar",
+        "text": "Alinear acciones fiscales, monetarias y estructurales."
+      },
+      {
+        "key": "Equipos especializados",
+        "name": "Ejecutar",
+        "text": "Asignar responsables, hitos y plazos."
+      },
+      {
+        "key": "Revisión conjunta",
+        "name": "Corregir",
+        "text": "Examinar resultados, consultas y obstáculos."
+      }
+    ],
+    "unit": "Relaciones cualitativas"
+  },
+  {
+    "id": "frontera-evidencia",
+    "chapter": 11,
+    "layout": "links",
+    "title": "Qué se puede calcular y qué exige validación",
+    "period": "Primera entrega de noviembre de 2026",
+    "source": "Morfe (2026), memoria técnica del Modelo Integrado de Sostenibilidad y Resurgimiento Económico, pp. 1–4.",
+    "treatment": "Estado metodológico de la primera entrega",
+    "legend": "La columna derecha indica la operación ejecutada o la evidencia que aún se necesita para estimar cada resultado.",
+    "interpretation": "La misma trayectoria oficial admite contrastes aritméticos reproducibles. Evaluar solvencia a partir de un canje específico exige conocer los flujos negociados y el perímetro de las obligaciones.",
+    "implication": "La siguiente entrega requiere series conciliadas, comparación predictiva fuera de muestra y supuestos calibrados antes de publicar intervalos o probabilidades.",
+    "columns": [
+      "Objeto",
+      "Alcance documental"
+    ],
+    "rows": [
+      {
+        "left": "Deuda relativa al producto",
+        "right": "Cálculo estático al fijar el saldo de deuda"
+      },
+      {
+        "left": "Exposición comercial petrolera",
+        "right": "Sensibilidad al volumen vendido y al precio"
+      },
+      {
+        "left": "Valor presente del canje",
+        "right": "Pendiente de cupones, plazos y flujos futuros"
+      },
+      {
+        "left": "Modelos probabilísticos",
+        "right": "Pendientes de estimación y validación temporal"
+      }
+    ],
+    "unit": "Relaciones cualitativas"
+  }
+]

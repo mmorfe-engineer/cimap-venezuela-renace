@@ -1,0 +1,69 @@
+---
+import DiagramPlot from './DiagramPlot.astro';
+import type { DiagramData } from './diagram-types';
+
+interface Props { diagram: DiagramData }
+const { diagram } = Astro.props;
+const { id, title, interpretation, implication, period, source, legend, treatment } = diagram;
+const isMatrix = diagram.layout === 'matrix';
+---
+<figure class="analytic-figure" aria-labelledby={id + '-title'} id={id}>
+  <header class="figure-heading">
+    <p>{treatment} <span aria-hidden="true"> / </span> {period}</p>
+    <h3 id={id + '-title'}>{title}</h3>
+  </header>
+  <div class="plate" aria-hidden="true">
+    <div class="wide-plot"><DiagramPlot {diagram} compact={false}/></div>
+    <div class="narrow-plot"><DiagramPlot {diagram} compact={true}/></div>
+  </div>
+  <figcaption>
+    <p class="legend"><b>{diagram.unit}.</b> {legend}</p>
+    {isMatrix ? (
+      <details class="risk-detail">
+        <summary>Consultar valoraciones y respuestas de política</summary>
+        <dl>
+          {diagram.risks?.map(risk => (
+            <div><dt>{risk.name}</dt>
+              <dd><span>Probabilidad media. </span>{diagram.columns?.map((column, i) => column + ' · ' + risk.impact[i].toLowerCase()).join(' / ')}.</dd>
+              <dd>{risk.response}</dd>
+            </div>
+          ))}
+        </dl>
+      </details>
+    ) : (
+      <div class="text-alternative">
+        {diagram.anchor && <p>{diagram.anchor}</p>}
+        {diagram.steps && <ol>{diagram.steps.map(step => <li>{step.key}. {step.name}. {step.text}</li>)}</ol>}
+        {diagram.rows && <dl>{diagram.rows.map(row => <div><dt>{row.left}</dt><dd>{row.right}</dd></div>)}</dl>}
+      </div>
+    )}
+    <p class="reading">{interpretation}</p>
+    <p class="decision"><strong>Implicación estratégica</strong> {implication}</p>
+    <small>Fuente · {source}</small>
+  </figcaption>
+</figure>
+<style>
+  .analytic-figure{container-type:inline-size;margin:2.4rem 0;color:#112b47;border-block-start:1px solid #274763}
+  .figure-heading{padding:1rem 0 .85rem;position:static;background:none;color:inherit;display:block;height:auto}
+  .figure-heading p{font:600 .71rem/1.6 system-ui,sans-serif;color:#425c74;margin:0 0 .35rem;letter-spacing:.045em}
+  .figure-heading p span{color:#758698;margin-inline:.32em}
+  .figure-heading h3{font:400 clamp(1.5rem,3.6cqi,2.2rem)/1.15 Georgia,serif;color:inherit;margin:0;text-wrap:balance}
+  .plate{background:#f2f5f5;border-block:1px solid #d6e0df;padding:.35rem .5rem}
+  .narrow-plot{display:none}
+  @container (max-width:510px){.wide-plot{display:none}.narrow-plot{display:block}}
+  figcaption{display:block;font:400 .95rem/1.65 system-ui,sans-serif}
+  .legend,small{font:400 .78rem/1.55 system-ui,sans-serif;color:#41596a}
+  .legend{margin:.65rem 0 .95rem}
+  .reading,.decision{margin:.5rem 0}
+  .decision strong{display:block;font:650 .76rem/1.5 system-ui,sans-serif;color:#2b4d68}
+  small{display:block;margin-top:.8rem}
+  .text-alternative{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden;white-space:nowrap}
+  .risk-detail{border-block:1px solid #cbd6db;padding:.55rem 0}
+  .risk-detail summary{font:650 .85rem/1.5 system-ui,sans-serif;cursor:pointer;color:#154b78}
+  .risk-detail dl{margin-block:.85rem 0}
+  .risk-detail dl div{padding:.6rem 0;border-block-start:1px solid #d6dfe1}
+  .risk-detail dt{font-weight:650}
+  .risk-detail dd{font-size:.83rem;margin:0}
+  .risk-detail dd + dd{color:#33546a}
+  @media print{.wide-plot{display:block}.narrow-plot{display:none}.plate{print-color-adjust:exact}}
+</style>

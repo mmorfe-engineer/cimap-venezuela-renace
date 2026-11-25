@@ -1,0 +1,125 @@
+---
+import type { DiagramData } from './diagram-types';
+interface Props { diagram: DiagramData; compact: boolean }
+const { diagram, compact } = Astro.props;
+const width = compact ? 320 : 680;
+const rows = diagram.rows ?? [];
+const steps = diagram.steps ?? [];
+const risks = diagram.risks ?? [];
+const isPath = diagram.layout === 'path';
+const isHub = diagram.layout === 'hub';
+const isMatrix = diagram.layout === 'matrix';
+const isLinks = diagram.layout === 'links';
+const indentation = compact ? 6 : 12;
+const stepWidth = (width - 2 * indentation) / Math.max(1, steps.length);
+const columnRight = compact ? 165 : 337;
+const rowHeight = compact ? 75 : 60;
+const matrixStart = compact ? 148 : 280;
+const matrixColumn = (width - matrixStart - indentation) / 4;
+const matrixRow = compact ? 42 : 32;
+const height = isMatrix ? 53 + matrixRow * risks.length :
+  isHub ? (compact ? 88 + 73 * rows.length : 32 + 63 * rows.length) :
+  isPath ? (compact ? 17 + steps.length * 112 : 183) : 43 + rowHeight * rows.length;
+
+function lines(text: string, limit: number) {
+  const wrapped: string[] = [];
+  let line = '';
+  for (const word of text.split(/\s+/)) {
+    if (line && (line.length + word.length + 1) > limit) {
+      wrapped.push(line);
+      line = word;
+    } else {
+      line = line ? line + ' ' + word : word;
+    }
+  }
+  if (line) wrapped.push(line);
+  return wrapped;
+}
+const tone: Record<string,string> = { Bajo:'#e7edee', Medio:'#bbd6e1', Alto:'#204d71' };
+---
+<svg class="plot" viewBox={`0 0 ${width} ${height}`} focusable="false" aria-hidden="true">
+  {isPath && steps.map((step, i) => {
+    const x = compact ? 13 : indentation + i * stepWidth + 3;
+    const y = compact ? 25 + i * 112 : 55;
+    const labelX = compact ? 34 : x;
+    const next = i < steps.length - 1;
+    const labelY = compact ? y - 1 : y - 20;
+    const nameY = compact ? y + 25 : y + 34;
+    const bodyY = nameY + 24;
+    return <g>
+      {next && (compact ? <path class="rail" d={`M${x} ${y} v112`}/> : <path class="rail" d={`M${x} ${y} h${stepWidth}`}/>)}
+      <circle cx={x} cy={y} r="6" fill={i === 0 ? '#daa521' : '#1a4972'} stroke="#153a56" stroke-width="1.5"/>
+      <text class="key" x={labelX} y={labelY}>{step.key.toUpperCase()}</text>
+      <text class="node" x={labelX} y={nameY}>{step.name}</text>
+      <text class="body" x={labelX} y={bodyY}>{lines(step.text,compact ? 39 : 27).map((line, n) => <tspan x={labelX} dy={n ? 17 : 0}>{line}</tspan>)}</text>
+    </g>;
+  })}
+  {isHub && <>
+    {!compact && <><path class="rail" d="M129 139 H180"/><circle cx="131" cy="139" r="5" fill="#e7b844"/><text x="11" y="129" class="anchor">Recuperación</text><text x="11" y="157" class="anchor">económica</text></>}
+    {compact && <><text x="8" y="27" class="anchor">{diagram.anchor}</text><path d="M14 41 V68" class="rail"/><circle cx="14" cy="41" r="4" fill="#e7b844"/></>}
+    {rows.map((row, i) => {
+      const base = compact ? 82 + 73*i : 43 + 63*i;
+      const start = compact ? 14 : 180;
+      const end = compact ? 41 : 222;
+      const textX = end + 12;
+      return <g>
+        {i !== rows.length - 1 && <path class="rail" d={`M${start} ${base} v${compact ? 73 : 63}`}/>}
+        {compact && i === 0 && <path class="rail" d="M14 68 V82"/>}
+        <path class="rail" d={`M${start} ${base} H${end}`}/><circle cx={end} cy={base} r="4" fill="#265b82"/>
+        <text class="node" x={textX} y={base+5}>{row.left}</text>
+        <text class="body" x={textX} y={base+26}>{lines(row.right,compact ? 35 : 66).map((line,n) => <tspan x={textX} dy={n ? 16 : 0}>{line}</tspan>)}</text>
+      </g>;
+    })}
+  </>}
+  {isLinks && <>
+    <text class="key" x={indentation} y="22">{diagram.columns?.[0].toUpperCase()}</text>
+    <text class="key" x={columnRight} y="22">{diagram.columns?.[1].toUpperCase()}</text>
+    {rows.map((row, i) => {
+      const top = 34 + i * rowHeight;
+      const y = top + rowHeight/2;
+      const arrows = compact ? 141 : 288;
+      const left = lines(row.left,compact ? 18 : 35);
+      const right = lines(row.right,compact ? 19 : 43);
+      return <g>
+        <line class="rule" x1={indentation} x2={width-indentation} y1={top} y2={top}/>
+        <path class="direction" d={`M${arrows} ${y} h${compact ? 15 : 30} m-5 -4 l5 4 -5 4`}/>
+        <text class="left" x={indentation} y={y + 4 - 8*(left.length-1)}>{left.map((line,n)=><tspan x={indentation} dy={n ? 16 : 0}>{line}</tspan>)}</text>
+        <text class="right" x={columnRight} y={y + 4 - 8*(right.length-1)}>{right.map((line,n)=><tspan x={columnRight} dy={n ? 16 : 0}>{line}</tspan>)}</text>
+      </g>;
+    })}
+  </>}
+  {isMatrix && <>
+    <text class="key" x={indentation} y="26">FUENTE DE RIESGO</text>
+    {['1','2','3','4'].map((pillar,i) => <text class="key" text-anchor="middle" x={matrixStart+(i+.5)*matrixColumn} y="26">{compact ? 'P' : 'PILAR '}{pillar}</text>)}
+    {risks.map((risk,i) => {
+      const y = 39 + i*matrixRow;
+      const label = lines(risk.name, compact ? 19 : 39);
+      return <g>
+        <line class="rule" x1={indentation} x2={width-indentation} y1={y} y2={y}/>
+        <text class="row-label" x={indentation} y={y+matrixRow/2+4-7*(label.length-1)}>{label.map((line,n)=><tspan x={indentation} dy={n ? 14 : 0}>{line}</tspan>)}</text>
+        {risk.impact.map((level,j) => <g>
+          <rect x={matrixStart+j*matrixColumn+2} y={y+3} width={matrixColumn-4} height={matrixRow-6} fill={tone[level]} />
+          <text fill={level === 'Alto' ? 'white' : '#1e3d50'} font-weight="600" font-size={compact ? 12 : 13} text-anchor="middle" x={matrixStart+(j+.5)*matrixColumn} y={y+matrixRow/2+4}>{compact ? level[0] : level}</text>
+        </g>)}
+      </g>;
+    })}
+  </>}
+</svg>
+<style>
+  .plot{display:block;width:100%;height:auto;font:400 14px Arial,sans-serif;fill:#15334a;overflow:visible}
+  .rail,.direction,.rule{fill:none;stroke:#47708d;stroke-width:1.25}
+  .direction{stroke:#346782;stroke-width:1.5}
+  .rule{stroke:#c9d5da;stroke-width:1}
+  .node,.anchor{font:400 22px Georgia,serif;fill:#143b5e}
+  .anchor{font-style:italic}
+  .key{font:700 10px Arial,sans-serif;letter-spacing:.45px;fill:#36536b}
+  .body,.right{font:400 14px Arial,sans-serif;fill:#344f60}
+  .left{font:600 14px Arial,sans-serif}
+  .row-label{font:400 13px Arial,sans-serif}
+  @container (max-width:510px){
+    .node,.anchor{font-size:21px}
+    .right,.left{font-size:13px}
+    .row-label{font-size:12px}
+    .key{font-size:9px}
+  }
+</style>

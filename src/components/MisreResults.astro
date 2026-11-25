@@ -1,0 +1,134 @@
+---
+import base from '../data/base.json';
+import series from '../data/series.json';
+import {format} from '../lib/edition';
+
+const first = base.find(row => row.anio === 2025)!;
+const start = base.find(row => row.anio === 2026)!;
+const end = base.find(row => row.anio === 2036)!;
+const increase = (before: number, after: number) => 100 * (after / before - 1);
+const output = [
+  {label: '2012 · base histórica', value: 100, tone: 'base'},
+  {label: '2025 · estimación', value: first.PIB_real_indice, tone: 'estimate'},
+  {label: '2036 · proyección', value: end.PIB_real_indice, tone: 'forecast'}
+];
+const gap = end.PIB_real_indice - output[0].value;
+const fiscal = base.filter(row => row.anio >= 2026 && row.anio <= 2030);
+const deficit = -fiscal.reduce((sum, row) => sum + row.saldo_primario_USD_MMM, 0);
+
+// Montos narrativos redondeados en miles de millones de dólares (p. 90).
+const capex = [
+  {label: 'Petróleos de Venezuela', value: 75},
+  {label: 'Socios', value: 85}
+];
+const capexTotal = capex.reduce((sum, part) => sum + part.value, 0);
+const capexAnnualSum = base.reduce((sum, row) => sum + (row.capex_petrolero_MMM ?? 0), 0);
+
+const crude = series.find(row => row.id === 'crudo-contratos')!;
+const contractOutput = crude.points.find(point => point.label === '2036')!.value;
+const allOutput = end.produccion_mbd * 1000;
+// Cuadro oficial 32, columna 2036. Unidad: miles de barriles diarios.
+const operators = [
+  {label: 'Operación directa', value: 217},
+  {label: 'Empresas mixtas', value: 1033},
+  {label: 'Convenios y licencias', value: contractOutput}
+];
+const official = 'https://www.mppef.gob.ve/wp-content/uploads/2026/11/Plan-Venezuela-Renace-vES.pdf';
+---
+<section class="module result-plate" aria-labelledby="resultados-v2" id="calculos-documentales">
+  <p class="eyebrow gold-rule">Memoria técnica · Tablas A2 y A4</p>
+  <h2 id="resultados-v2">Cuatro cálculos sobre la senda oficial</h2>
+  <p class="plate-intro">La escala de la recuperación depende de qué se compara. Estas operaciones conservan los años base, los perímetros fiscales y los volúmenes del programa de noviembre de 2026.</p>
+
+  <figure class="result-figure" aria-labelledby="misre-volumen">
+    <figcaption>
+      <p class="context">Producto real · 2012, 2025 y 2036</p>
+      <h3 id="misre-volumen">Cuánto se recuperaría del nivel de 2012</h3>
+      <p>Índice del producto interno bruto (PIB) a precios constantes. La unidad de referencia es 100 en 2012.</p>
+    </figcaption>
+    <div class="horizontal-bars">
+      {output.map(row => <div class="hrow"><span>{row.label}</span><div class="track" aria-hidden="true"><i class={row.tone} style={'width:' + row.value + '%'}></i></div><strong>{format(row.value)}</strong></div>)}
+    </div>
+    <p class="operation">Variación 2025–2036 · ({format(end.PIB_real_indice)} ÷ {format(first.PIB_real_indice)} − 1) × 100 = <b>+{format(increase(first.PIB_real_indice, end.PIB_real_indice))} %</b></p>
+    <p class="operation">Distancia frente a 2012 · ({format(end.PIB_real_indice)} ÷ 100 − 1) × 100 = <b>−{format(-gap)} %</b></p>
+    <p>La economía casi duplicaría el volumen de 2025 y todavía produciría menos que en 2012. Para evaluar la recuperación conviene seguir tanto la tasa de crecimiento como la distancia al nivel de referencia.</p>
+    <small>Fuente · Cálculo CIMAP con la tabla 27 del programa. <a href={official+'#page=92'}>Consultar p. 92</a></small>
+  </figure>
+
+  <figure class="result-figure" aria-labelledby="misre-deficit">
+    <figcaption>
+      <p class="context">Sector público no financiero · Proyección 2026–2030</p>
+      <h3 id="misre-deficit">Cinco déficits primarios consecutivos</h3>
+      <p>Magnitud del déficit de cada año en miles de millones de dólares equivalentes. Las barras parten de cero y comparten una escala de 0 a 5.</p>
+    </figcaption>
+    <div class="horizontal-bars">
+      {fiscal.map(row => <div class="hrow"><span>{row.anio}</span><div class="track" aria-hidden="true"><i class="forecast" style={'width:' + (-row.saldo_primario_USD_MMM / 5 * 100) + '%'}></i></div><strong>{format(-row.saldo_primario_USD_MMM)}</strong></div>)}
+    </div>
+    <p class="operation">Suma de déficits · {fiscal.map(row => format(-row.saldo_primario_USD_MMM)).join(' + ')} = <b>{format(deficit)} mil millones de dólares</b></p>
+    <p>Este flujo acumulado mide la parte del gasto primario que excedería los ingresos. Para estimar la financiación bruta también hacen falta intereses pagaderos, amortizaciones y ajustes de caja.</p>
+    <small>Fuente · Cálculo CIMAP con la tabla 28 del programa. <a href={official+'#page=93'}>Consultar p. 93</a></small>
+  </figure>
+
+  <figure class="result-figure" aria-labelledby="misre-capital">
+    <figcaption>
+      <p class="context">Sector petrolero · Programa de inversión 2026–2036</p>
+      <h3 id="misre-capital">Quién aportaría el capital petrolero</h3>
+      <p>Participación en los {format(capexTotal)} mil millones de dólares previstos. Cada segmento representa una fuente de financiamiento.</p>
+    </figcaption>
+    <div class="composition" aria-hidden="true">
+      {capex.map((part,i) => <span class={'segment tone-'+i} style={'width:'+part.value/capexTotal*100+'%'}></span>)}
+    </div>
+    <ul class="parts">{capex.map((part,i) => <li><i class={'swatch tone-'+i} aria-hidden="true"></i><span>{part.label}</span><strong>{part.value} mil millones · {format(100*part.value/capexTotal,3)} %</strong></li>)}</ul>
+    <p class="operation">Participación de Petróleos de Venezuela · 75 ÷ 160 × 100 = <b>{format(100*75/capexTotal,3)} %</b></p>
+    <p>El texto del programa redondea la inversión total a {capexTotal} mil millones. Los montos anuales de la tabla 32 suman {format(capexAnnualSum)} mil millones. Contrastar los aportes efectivos de cada parte permitiría comprobar el avance financiero.</p>
+    <small>Fuente · Cálculo CIMAP con los montos narrativos y la tabla 32. <a href={official+'#page=90'}>Consultar p. 90</a> y <a href={official+'#page=97'}>p. 97</a></small>
+  </figure>
+
+  <figure class="result-figure" aria-labelledby="misre-operadores">
+    <figcaption>
+      <p class="context">Petróleo crudo · Producción proyectada de 2036</p>
+      <h3 id="misre-operadores">Cómo se reparte el volumen por régimen operativo</h3>
+      <p>Miles de barriles por día. La barra completa representa {format(allOutput)} mil barriles diarios.</p>
+    </figcaption>
+    <div class="composition" aria-hidden="true">
+      {operators.map((part,i) => <span class={'segment tone-'+i} style={'width:'+100*part.value/allOutput+'%'}></span>)}
+    </div>
+    <ul class="parts">{operators.map((part,i) => <li><i class={'swatch tone-'+i} aria-hidden="true"></i><span>{part.label}</span><strong>{format(part.value)} mil · {format(100*part.value/allOutput)} %</strong></li>)}</ul>
+    <p class="operation">Convenios de participación productiva y licencias · {format(contractOutput)} ÷ {format(allOutput)} × 100 = <b>{format(100*contractOutput/allOutput)} %</b></p>
+    <p>En el conjunto del sector, pasar de {format(start.produccion_mbd*1000)} a {format(allOutput)} mil barriles diarios implicaría un crecimiento de {format(increase(start.produccion_mbd,end.produccion_mbd))} % entre 2026 y 2036. Para traducir la producción de cada régimen en ingresos públicos se necesitan sus condiciones fiscales y contractuales.</p>
+    <small>Fuente · Cálculo CIMAP con la tabla 32 del programa. <a href={official+'#page=97'}>Consultar p. 97</a></small>
+  </figure>
+</section>
+<style>
+  .result-plate {color:#17334c;margin-block:3rem;container-type:inline-size}
+  .result-plate h2 {margin-bottom:.6rem}
+  .plate-intro {max-width:66ch}
+  .result-figure {margin:1.8rem 0 0;padding-block:1rem;border-top:1px solid #8fa4af}
+  .result-figure h3 {font:500 clamp(1.4rem,4cqi,1.95rem)/1.2 'Spectral',Georgia,serif;margin:.3rem 0 .55rem;text-wrap:balance}
+  .result-figure p {margin:.6rem 0;max-width:74ch}
+  .result-figure figcaption p,.result-figure small,.parts,.horizontal-bars,.operation {font-family:'Source Sans 3',system-ui,sans-serif}
+  .result-figure figcaption p {font-size:.93rem;color:#40596a}
+  .result-figure figcaption .context {font-size:.74rem;font-weight:650;letter-spacing:.055em;text-transform:uppercase;color:#36516b}
+  .horizontal-bars {margin-block:1rem;font-size:.87rem;font-variant-numeric:tabular-nums;max-width:48rem}
+  .hrow {display:grid;align-items:center;grid-template-columns:minmax(8rem,10.5rem) 1fr 3rem;gap:.55rem;padding-block:.17rem}
+  .hrow strong {text-align:right}
+  .track {height:.63rem;background:#edf1f1;border-inline-start:1px solid #6c8592}
+  .track i {display:block;height:100%}
+  .base {background:#516678}
+  .estimate {background:#163654}
+  .forecast {background:#2975a6}
+  .composition {margin:1.15rem 0 .6rem;display:flex;width:100%;height:1.4rem;background:#e2e9ea}
+  .segment+.segment {border-inline-start:2px solid white}
+  .tone-0 {background:#173655}
+  .tone-1 {background:#387da8}
+  .tone-2 {background:#e1b242}
+  .parts {list-style:none;margin:.6rem 0 1rem;padding:0;font-size:.9rem}
+  .parts li {display:grid;grid-template-columns:.65rem 1fr auto;align-items:baseline;gap:.5rem;padding:.24rem 0;border-bottom:1px solid #d9e0e4}
+  .parts strong {text-align:right;font-variant-numeric:tabular-nums}
+  .swatch {width:.6rem;height:.6rem;display:inline-block;border:1px solid #435762}
+  .result-figure .operation {padding:.45rem .65rem;background:#f1f5f6;border-inline-start:2px solid #668494;font-size:.91rem;font-variant-numeric:tabular-nums}
+  .result-figure small {display:block;font-size:.79rem;color:#40596a}
+  .result-figure a {text-decoration:underline;text-underline-offset:.17em;color:#154d76}
+  @container (max-width:370px) {.hrow{grid-template-columns:7rem 1fr 2.4rem;gap:.35rem}.parts li{grid-template-columns:.65rem 1fr}.parts strong{grid-column:2;text-align:left}}
+  @media print {.result-figure{break-inside:avoid}.track,.composition,.swatch{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>

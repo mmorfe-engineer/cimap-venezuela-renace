@@ -1,0 +1,19 @@
+---
+import { series,format,chapterUrl } from '../lib/edition';
+const points=series.find(s=>s.id==='pib-real')!.points;
+const x=(i:number)=>33+i*23.6, y=(n:number)=>170-n*1.65;
+const coords=(a:number,b:number)=>points.slice(a,b).map((p,i)=>x(i+a)+','+y(p.value)).join(' ');
+---
+<figure class="cover-graphic"><div class="plate-top"><span>FIG. 01</span><span>MARCO MACROECONÓMICO</span></div>
+<h2>La senda de recuperación</h2><p>Producto interno bruto real · Índice, 2012 = 100</p>
+<svg viewBox="0 0 477 209" role="img" aria-label="Producto interno bruto real. De 36,3 en la estimación de 2025 a 71,3 en la proyección para 2036. La referencia de 2012 es 100.">
+<defs><pattern id="hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(24)"><line x1="0" y1="0" x2="0" y2="5" stroke="#80adc4" stroke-width="1" opacity=".38"/></pattern></defs>
+{[0,25,50,75,100].map(v=><g><line x1="33" y1={y(v)} x2="445" y2={y(v)} stroke="#486376" stroke-width=".7"/><text x="26" y={y(v)+4} text-anchor="end">{v}</text></g>)}
+<polygon points={coords(6,18)+' '+x(17)+',170 '+x(6)+',170'} fill="url(#hatch)"/>
+<polyline points={coords(0,6)} fill="none" stroke="#f3f5f1" stroke-width="3"/>
+<polyline points={coords(5,7)} fill="none" stroke="#9acee4" stroke-width="3" stroke-dasharray="2 3"/>
+<polyline points={coords(6,18)} fill="none" stroke="#ffcc50" stroke-width="3.5" stroke-dasharray="7 4"/>
+{[0,6,12,17].map(i=><text x={x(i)} y="193" text-anchor="middle">{points[i].label}</text>)}
+{[6,17].map(i=><g><circle cx={x(i)} cy={y(points[i].value)} r="4" fill={i===6?'#a0d8ef':'#ffcc50'}/><text class="chart-label" x={x(i)} y={y(points[i].value)-12} text-anchor="middle">{format(points[i].value)}</text></g>)}
+</svg><div class="cover-legend"><span>Histórico</span><span>Estimación</span><span>Proyección</span></div>
+<figcaption>El escenario oficial se acerca al doble del nivel de 2025. Alcanzarlo exige sostener la expansión durante once años.<a href={chapterUrl(3)+'#serie-pib-real'}>Programa nacional, tabla 27, p. 92 <span aria-hidden="true">↗</span></a></figcaption></figure>

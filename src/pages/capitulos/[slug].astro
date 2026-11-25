@@ -1,0 +1,197 @@
+---
+import Page from '../../layouts/Page.astro';
+import Icon from '../../components/Icon.astro';
+import Diagram from '../../components/Diagram.astro';
+import Explorer from '../../components/Explorer.astro';
+import Agenda from '../../components/Agenda.astro';
+import Lab from '../../components/Lab.astro';
+import MisreResults from '../../components/MisreResults.astro';
+import chapters from '../../data/chapters.json';
+import series from '../../data/series.json';
+import diagrams from '../../data/diagrams.json';
+import references from '../../data/references.json';
+import { chapterUrl, num, root } from '../../lib/edition';
+import type { DiagramData } from '../../components/diagram-types';
+
+export function getStaticPaths() {
+  return chapters.map((c, i) => ({
+    params: { slug: c.slug },
+    props: {
+      chapter: c,
+      prev: i > 0 ? chapters[i - 1] : null,
+      next: i < chapters.length - 1 ? chapters[i + 1] : null
+    }
+  }));
+}
+
+const { chapter, prev, next } = Astro.props;
+const chapterSeries = series.filter(s => s.chapter === chapter.id);
+const chapterDiagrams = diagrams.filter(d => d.chapter === chapter.id) as DiagramData[];
+
+// Group references by category for chapter 12
+const refCategories = [...new Set(references.map(r => r.category))];
+---
+
+<Page
+  title={`${num(chapter.id)}. ${chapter.title}`}
+  description={chapter.lead}
+>
+  <div class="shell">
+    <header class="chapter-hero">
+      <p class="chapter-kicker">{chapter.kicker} <span>·</span> Capítulo {num(chapter.id)}</p>
+      <div class="chapter-number">{num(chapter.id)}</div>
+      <h1 class="chapter-title">{chapter.title}</h1>
+      <p class="chapter-lead">{chapter.lead}</p>
+      <div class="takeaway-box">
+        <strong>Tesis fundamental / Mancheta estratégica</strong>
+        <p>{chapter.takeaway}</p>
+      </div>
+    </header>
+
+    <div class="editorial-grid">
+      <!-- 40% TEXTO NARRATIVO Y EXPLICATIVO -->
+      <section class="editorial-narrative" aria-label="Texto explicativo del capítulo">
+        <p class="eyebrow gold-rule">Análisis cualitativo</p>
+        {chapter.sections.map((sec) => (
+          <article class="narrative-section">
+            <h3>{sec.title}</h3>
+            <p>{sec.text}</p>
+            <p class="narrative-source">{sec.source}</p>
+          </article>
+        ))}
+      </section>
+
+      <!-- 60% VISUALIZACIONES, DIAGRAMAS, TABLAS E INTERACTIVIDAD -->
+      <section class="editorial-visuals" aria-label="Visualizaciones y datos del capítulo">
+        <p class="eyebrow gold-rule">Evidencia y modelos</p>
+
+        {/* Diagramas analíticos del capítulo */}
+        {chapterDiagrams.map((d) => (
+          <Diagram diagram={d} />
+        ))}
+
+        {/* Componentes específicos por capítulo */}
+        {chapter.id === 2 && (
+          <Agenda />
+        )}
+
+        {chapterSeries.length > 0 && (
+          <Explorer items={chapterSeries} />
+        )}
+
+        {chapter.id === 11 && (
+          <>
+            <MisreResults />
+            <Lab />
+          </>
+        )}
+
+        {chapter.id === 12 && (
+          <section class="module" id="biblioteca-corpus">
+            <p class="eyebrow gold-rule">Documento IV / Referencias APA</p>
+            <h2>Corpus científico y documental</h2>
+            <p>Referencias bibliográficas conforme al estándar APA 7.ª edición con enlaces de verificación institucional.</p>
+
+            {refCategories.map((cat) => (
+              <div class="ref-group">
+                <h3 class="ref-cat-title">{cat}</h3>
+                <ul class="ref-list">
+                  {references.filter(r => r.category === cat).map((ref) => (
+                    <li class="ref-item">
+                      <span class="ref-tag">{ref.category}</span>
+                      <p class="ref-text">{ref.text}</p>
+                      {ref.url && (
+                        <a href={ref.url} class="ref-link" target="_blank" rel="noopener noreferrer">
+                          {ref.url} ↗
+                        </a>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+
+            <article class="disclaimer-card" id="renuncias-cientificas">
+              <p class="eyebrow">Documento III / Metodología</p>
+              <h3>Los límites del conocimiento</h3>
+              <p>Reconocer lo no observable permite mejorar la evaluación sin prejuzgar los resultados. Enfoque constructivo, riguroso y transparente.</p>
+
+              <div class="table-wrap">
+                <table class="disclaimer-table">
+                  <caption>Tabla L1. Registro de incertidumbres y acción de profundización</caption>
+                  <thead>
+                    <tr><th>Punto ciego</th><th>Riesgo de error / acción metodológica</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Inventario y perímetro</td><td>Duplicidades o pasivos omitidos; conciliación entidad a entidad, preservar derechos laborales.</td></tr>
+                    <tr><td>Servicio contractual</td><td>Imposibilidad de inferir quitas; prospectos, vencimientos, intereses y garantías.</td></tr>
+                    <tr><td>Petróleo y contratos</td><td>Captura fiscal distinta a facturación; balances de campo, ventas y costos.</td></tr>
+                    <tr><td>Reservas y flujos</td><td>Reservas brutas no equivalen a disponibles; desglose de liquidez y compromisos.</td></tr>
+                    <tr><td>Estadísticas macro</td><td>Rupturas y fuentes no comparables; frecuencia, definiciones y contraste.</td></tr>
+                    <tr><td>Bienestar e informalidad</td><td>Promedios pueden ocultar efectos distributivos; encuestas e indicadores reales.</td></tr>
+                    <tr><td>Sanciones y litigios</td><td>Eventos no inferibles de una serie; análisis jurídico actualizado.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="table-wrap" style="margin-top: 2rem;">
+                <table class="disclaimer-table">
+                  <caption>Tabla L2. Renuncias explícitas de la primera entrega</caption>
+                  <thead>
+                    <tr><th>Renuncia científica</th><th>Compromiso ético y metodológico</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Falsa precisión</td><td>Sin probabilidades ni quitas no calibradas.</td></tr>
+                    <tr><td>Certeza determinista</td><td>Proyecciones condicionadas y revisables.</td></tr>
+                    <tr><td>Causalidad aparente</td><td>Diagramas conceptuales, no efectos demostrados.</td></tr>
+                    <tr><td>Extrapolación</td><td>No proyectar automáticamente relaciones históricas.</td></tr>
+                    <tr><td>Autoridad prestada</td><td>SRDSF y FARI son referencias metodológicas; no constituyen aval del FMI.</td></tr>
+                    <tr><td>Completitud artificial</td><td>No imputar datos faltantes sin documentación explícita.</td></tr>
+                    <tr><td>Infalibilidad</td><td>Revisión técnica permanente y corrección abierta ante nueva evidencia.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          </section>
+        )}
+      </section>
+    </div>
+
+    {/* Navegación entre capítulos */}
+    <nav class="chapter-nav" aria-label="Navegación capitular">
+      {prev ? (
+        <a href={chapterUrl(prev.id)} class="prev">
+          <span class="nav-direction">Capítulo anterior</span>
+          <strong><Icon name="arrow" size={15} /> {num(prev.id)}. {prev.title}</strong>
+        </a>
+      ) : (
+        <a href={root} class="prev">
+          <span class="nav-direction">Portada</span>
+          <strong><Icon name="book" size={15} /> Índice general de la edición</strong>
+        </a>
+      )}
+
+      {next ? (
+        <a href={chapterUrl(next.id)} class="next">
+          <span class="nav-direction">Siguiente capítulo</span>
+          <strong>{num(next.id)}. {next.title} <Icon name="arrow" size={15} /></strong>
+        </a>
+      ) : (
+        <a href={root} class="next">
+          <span class="nav-direction">Inicio</span>
+          <strong>Volver a la portada <Icon name="arrow" size={15} /></strong>
+        </a>
+      )}
+    </nav>
+  </div>
+</Page>
+
+<style>
+  .ref-cat-title {
+    font-size: 1.15rem;
+    color: var(--color-navy-deep);
+    margin: 1.8rem 0 0.6rem;
+    border-bottom: 2px solid var(--color-renace);
+    padding-bottom: 0.3rem;
+  }
+</style>
